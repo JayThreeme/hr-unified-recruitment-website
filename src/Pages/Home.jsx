@@ -1,5 +1,6 @@
 //import React from 'react'
 
+import Companies from "./Components/Companies";
 import CtaFeaturing from "./Components/CtaFeaturing";
 import FeaturedJobs from "./Components/FeaturedJobs";
 import HeroHome from "./Components/HeroHome";
@@ -11,6 +12,7 @@ const Home = () => {
   return (
     <>
       <HeroHome />
+      <Companies/>
       <HowItWorks />
       <StatsBar />
       <Testimonials />
