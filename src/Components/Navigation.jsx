@@ -72,7 +72,7 @@ const Navigation = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <button className="btn btn-danger ms-2">Sign Up</button>
+                <button className="btn btn-danger ms-2" to="/login">Sign Up</button>
               </li>
             </ul>
           </div>

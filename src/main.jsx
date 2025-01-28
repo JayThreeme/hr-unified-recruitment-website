@@ -12,6 +12,9 @@ import "./index.css";
 import App from "./App";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
+import Jobs from "./Pages/Jobs";
+import Contact from "./Pages/Contact"
+import Login from "./Pages/Login";
 
 const root = document.getElementById("root");
 
@@ -21,6 +24,9 @@ ReactDOM.createRoot(root).render(
       <Route path="/" element={<App />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="jobs" element={<Jobs />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="login" element={<Login />} />
       </Route>
       {/* <Route path="/user" element={<User />}>
         <Route index element={<Dashboard />} />
