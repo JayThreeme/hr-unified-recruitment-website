@@ -1,0 +1,17 @@
+.cta-padding {
+  background-color: #eff4f8;
+  padding: 40px 100px;
+  border-radius: 20px 130px 20px 20px;
+}
+@media (max-width: 767px) {
+  .cta-padding {
+    padding: 20px;
+    border-radius: 20px 20px 20px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .image-icon {
+    display: none;
+  }
+}

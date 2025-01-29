@@ -23,6 +23,16 @@ import whyhr1 from "./images/whyhr1.png";
 import whyhr2 from "./images/whyhr2.png";
 import whyhr3 from "./images/whyhr3.png";
 
+//Profile
+import profile1 from "./profile/profile1.png";
+import profile2 from "./profile/profile2.png";
+import profile3 from "./profile/profile3.png";
+import profile4 from "./profile/profile4.png";
+import profile5 from "./profile/profile5.png";
+
+//CTA ICON
+import CTAicon from "./CTAicon.png";
+
 export {
   amazon,
   apple,
@@ -39,4 +49,10 @@ export {
   whyhr3,
   hrunifiedlogosvg,
   hrunifiedlogopng,
+  profile1,
+  profile2,
+  profile3,
+  profile4,
+  profile5,
+  CTAicon,
 };

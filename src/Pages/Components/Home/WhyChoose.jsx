@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { whyhr1, whyhr2, whyhr3 } from "../../../assets";
 
 const WhyChoose = () => {
@@ -9,7 +10,7 @@ const WhyChoose = () => {
         </h2>
         <p className="text-center  m-0 p-0">We have the best platform</p>
       </div>
-      <div className="row g-4">
+      <div className="row g-">
         <div className="col-md-4">
           <div className="card text-center p-4 shadow-sm">
             <img
@@ -59,6 +60,19 @@ const WhyChoose = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="text-center">
+        <Link to="/about">
+          <button
+            className="btn text-white"
+            style={{
+              backgroundColor: "#C31D25",
+              padding: "8px 100px",
+            }}
+          >
+            Learn more about us
+          </button>
+        </Link>
       </div>
     </div>
   );

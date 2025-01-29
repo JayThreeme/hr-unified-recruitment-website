@@ -6,7 +6,12 @@ const StatsBar = () => {
     { number: "5yrs", label: "In Business" },
   ];
   return (
-    <div className="text-white section-padding">
+    <div
+      className="text-white section-padding"
+      style={{
+        backgroundColor: "#F9FAFC",
+      }}
+    >
       <div
         className="container"
         style={{

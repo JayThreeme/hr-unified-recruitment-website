@@ -92,3 +92,12 @@ p {
 .card-body {
   flex-grow: 1;
 }
+
+.btn-outline-danger {
+  border-color: #c31d25;
+  color: #c31d25;
+}
+
+.btn-outline-danger:hover {
+  background-color: #c31d25;
+}
