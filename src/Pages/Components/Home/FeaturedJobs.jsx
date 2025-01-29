@@ -123,14 +123,16 @@ const FeaturedJobs = () => {
                     </div>
 
                     <div className="d-flex justify-content-end w-100">
-                      <button
-                        className="btn fw-medium"
-                        style={{
-                          color: "#126396",
-                        }}
-                      >
-                        Apply
-                      </button>
+                      <Link to="/application/form1">
+                        <button
+                          className="btn fw-medium"
+                          style={{
+                            color: "#126396",
+                          }}
+                        >
+                          Apply
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>

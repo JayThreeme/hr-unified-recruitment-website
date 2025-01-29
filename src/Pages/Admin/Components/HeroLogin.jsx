@@ -42,7 +42,7 @@ const HeroLogin = () => {
                       placeholder="Password"
                     />
                   </div>
-                  <Link to="/">
+                  <Link to="/admin/dashboard">
                     <button className="btn btn-danger w-100 button-style1">
                       Login
                     </button>

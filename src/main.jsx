@@ -16,6 +16,15 @@ import Jobs from "./Pages/Jobs";
 import Contact from "./Pages/Contact";
 import Login from "./Pages/Admin/Login";
 
+import Application from "./Pages/Application";
+import ApplicationFormOne from "./Pages/Components/Application/ApplicationFormOne";
+import ApplicationFormTwo from "./Pages/Components/Application/ApplicationFormTwo";
+import ApplicationFormThree from "./Pages/Components/Application/ApplicationFormThree";
+import ApplicationFormThanks from "./Pages/Components/Application/ApplicationFormThanks";
+
+import Dashboard from "./Pages/Admin/Dashboard";
+import AdminDashboard from "./Pages/Admin/AdminDashboard";
+
 const root = document.getElementById("root");
 
 ReactDOM.createRoot(root).render(
@@ -28,9 +37,15 @@ ReactDOM.createRoot(root).render(
         <Route path="contact" element={<Contact />} />
         <Route path="login" element={<Login />} />
       </Route>
-      {/* <Route path="/user" element={<User />}>
-        <Route index element={<Dashboard />} />
-      </Route> */}
+      <Route path="/application" element={<Application />}>
+        <Route index path="form1" element={<ApplicationFormOne />} />
+        <Route path="form2" element={<ApplicationFormTwo />} />
+        <Route path="form3" element={<ApplicationFormThree />} />
+        <Route path="thanks" element={<ApplicationFormThanks />} />
+      </Route>
+      <Route path="/admin/dashboard" element={<Dashboard />}>
+        <Route index element={<AdminDashboard />} />
+      </Route>
     </Routes>
   </BrowserRouter>
 );
