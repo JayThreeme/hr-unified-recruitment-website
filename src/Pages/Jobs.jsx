@@ -1,8 +1,11 @@
+import HeroJobs from "./Components/Jobs/HeroJobs";
 
 const Jobs = () => {
   return (
-    <div>Jobs</div>
-  )
-}
+    <>
+      <HeroJobs />
+    </>
+  );
+};
 
-export default Jobs
+export default Jobs;

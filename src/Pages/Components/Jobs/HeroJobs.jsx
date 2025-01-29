@@ -1,6 +1,6 @@
 import { heroimage } from "../../../assets";
 
-const HeroHome = () => {
+const HeroJobs = () => {
   return (
     <>
       <div
@@ -18,7 +18,7 @@ const HeroHome = () => {
           <div className="row align-items-center">
             <div className="col-md-6">
               <h1 className="display-3 fw-bold">
-                Unifying Recruitment for Full-Time & Freelance Talent
+                Explore Open Job Opportunities
               </h1>
               <p>
                 Find the right job, the right way. Streamlined hiring for
@@ -76,4 +76,4 @@ const HeroHome = () => {
   );
 };
 
-export default HeroHome;
+export default HeroJobs;

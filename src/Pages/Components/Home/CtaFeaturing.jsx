@@ -24,7 +24,7 @@ const CtaFeaturing = () => {
       <div
         className="position-relative"
         style={{
-          backgroundColor: "#000",
+          backgroundColor: "#F9FAFC",
         }}
         // #F9FAFC
       >

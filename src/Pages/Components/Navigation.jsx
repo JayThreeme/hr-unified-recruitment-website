@@ -5,7 +5,7 @@ const Navigation = () => {
   const location = useLocation();
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-light bg-white position-absolute top-0 start-0 container-fluid z-3"
+      className="navbar navbar-expand-lg navbar-light  position-absolute top-0 start-0 container-fluid z-3"
       style={{
         padding: "0px",
       }}
@@ -70,7 +70,7 @@ const Navigation = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/jobs">
+              <Link to="/login">
                 <button className="btn button-style1 ms-2 fw-medium">
                   Login
                 </button>

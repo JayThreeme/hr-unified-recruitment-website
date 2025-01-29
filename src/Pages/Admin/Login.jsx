@@ -1,5 +1,11 @@
+import HeroLogin from "./Components/HeroLogin";
+
 const Login = () => {
-  return <div>Login</div>;
+  return (
+    <>
+      <HeroLogin />
+    </>
+  );
 };
 
 export default Login;

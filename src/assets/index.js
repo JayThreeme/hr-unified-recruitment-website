@@ -11,6 +11,9 @@ import wallmart from "./companies/wallmart.png";
 //LOGO
 import hrunifiedlogosvg from "./hr-unified-logo.svg";
 import hrunifiedlogopng from "./hr-unified-logo.png";
+import hrunifiedlogosvgwhite from "./hr-unified-logo-white.svg";
+import hrunifiedlogopngwhite from "./hr-unified-logo-white.png";
+import hrunifiedlogosvgwhitetwo from "./hr-unified-logo-white-two.svg";
 
 //HERO SECTION
 import heroimage from "./images/hero-image1.png";
@@ -49,6 +52,9 @@ export {
   whyhr3,
   hrunifiedlogosvg,
   hrunifiedlogopng,
+  hrunifiedlogosvgwhite,
+  hrunifiedlogopngwhite,
+  hrunifiedlogosvgwhitetwo,
   profile1,
   profile2,
   profile3,
