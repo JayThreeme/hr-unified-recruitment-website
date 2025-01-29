@@ -1,6 +1,7 @@
 import { Outlet } from "react-router";
 import Navigation from "./Components/Navigation";
 import Footer from "./Components/Footer";
+import ApplicationTitle from "./Components/Application/ApplicationTitle";
 
 const Application = () => {
   return (
@@ -12,6 +13,7 @@ const Application = () => {
           height: "90px",
         }}
       ></div>
+      <ApplicationTitle />
       <Outlet />
       <Footer />
     </>
