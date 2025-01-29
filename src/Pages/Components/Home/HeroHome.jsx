@@ -53,7 +53,7 @@ const HeroHome = () => {
                     }}
                   />
                   <button
-                    className="btn btn-danger btn-lg"
+                    className="btn btn-danger btn-lg button-style1"
                     style={{ fontSize: "16px" }}
                   >
                     Search Jobs

@@ -1,5 +1,5 @@
-import { heroimage } from "../../../assets";
-
+import { Link } from "react-router";
+import { hrunifiedlogosvg } from "../../../assets";
 const HeroLogin = () => {
   return (
     <>
@@ -16,17 +16,39 @@ const HeroLogin = () => {
           }}
         >
           <div className="row align-items-center">
-            <div className="col-md-6">
-              <h1 className="display-3 fw-bold">Login</h1>
-              <p>log</p>
-            </div>
-            <div
-              className="col-md-6 d-flex justify-content-end align-item"
-              // style={{
-              //   height: "100%",
-              // }}
-            >
-              <img src={heroimage} alt="Job Search" className="img-fluid" />
+            <div className="container d-flex justify-content-center align-items-center">
+              <div className="card p-4 shadow" style={{ width: "350px" }}>
+                <div className="text-center mb-4">
+                  <img
+                    src={hrunifiedlogosvg}
+                    alt="HR Unified Recruitment"
+                    style={{ width: "100%" }}
+                    className="img-fluid"
+                  />
+                </div>
+                <h6 className="mb-3">Login</h6>
+                <form>
+                  <div className="mb-3">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Username"
+                    />
+                  </div>
+                  <div className="mb-3">
+                    <input
+                      type="password"
+                      className="form-control"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <Link to="/">
+                    <button className="btn btn-danger w-100 button-style1">
+                      Login
+                    </button>
+                  </Link>
+                </form>
+              </div>
             </div>
           </div>
         </div>
