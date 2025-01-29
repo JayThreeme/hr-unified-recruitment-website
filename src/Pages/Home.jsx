@@ -1,18 +1,18 @@
 //import React from 'react'
 
-import Companies from "./Components/Companies";
-import CtaFeaturing from "./Components/CtaFeaturing";
-import FeaturedJobs from "./Components/FeaturedJobs";
-import HeroHome from "./Components/HeroHome";
-import HowItWorks from "./Components/HowItWorks";
-import StatsBar from "./Components/StatsBar";
-import Testimonials from "./Components/Testimonials";
+import Companies from "./Components/Home/Companies";
+import CtaFeaturing from "./Components/Home/CtaFeaturing";
+import FeaturedJobs from "./Components/Home/FeaturedJobs";
+import HeroHome from "./Components/Home/HeroHome";
+import HowItWorks from "./Components/Home/HowItWorks";
+import StatsBar from "./Components/Home/StatsBar";
+import Testimonials from "./Components/Home/Testimonials";
 
 const Home = () => {
   return (
     <>
       <HeroHome />
-      <Companies/>
+      <Companies />
       <HowItWorks />
       <StatsBar />
       <Testimonials />

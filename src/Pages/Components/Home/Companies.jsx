@@ -1,13 +1,15 @@
-import amazon from "../../assets/companies/amazon.png";
-import apple from "../../assets/companies/apple.png";
-import ibm from "../../assets/companies/ibm.png";
-import microsoft from "../../assets/companies/microsoft.png";
-import nvdia from "../../assets/companies/nvdia.png";
-import oracle from "../../assets/companies/oracle.png";
-import png from "../../assets/companies/p&g.png";
-import wallmart from "../../assets/companies/wallmart.png";
+import {
+  amazon,
+  apple,
+  ibm,
+  microsoft,
+  nvdia,
+  oracle,
+  png,
+  wallmart,
+} from "../../../assets";
 
-import "../../Css/marquescroll.css";
+import "../../../Css/marquescroll.css";
 
 const Companies = () => {
   const images = [

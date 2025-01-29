@@ -13,8 +13,8 @@ import App from "./App";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Jobs from "./Pages/Jobs";
-import Contact from "./Pages/Contact"
-import Login from "./Pages/Login";
+import Contact from "./Pages/Contact";
+import Login from "./Pages/Admin/Login";
 
 const root = document.getElementById("root");
 

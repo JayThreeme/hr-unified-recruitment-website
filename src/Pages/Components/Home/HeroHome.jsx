@@ -1,4 +1,4 @@
-import heroimage1 from "../../assets/images/hero-image1.png";
+import { heroimage } from "../../../assets";
 
 const HeroHome = () => {
   return (
@@ -33,7 +33,7 @@ const HeroHome = () => {
             </div>
             <div className="col-md-6 d-flex justify-content-end  ">
               <img
-                src={heroimage1}
+                src={heroimage}
                 alt="Job Search"
                 className="img-fluid"
                 // style={{ width: "80%" }}

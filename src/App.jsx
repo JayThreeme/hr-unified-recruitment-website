@@ -1,8 +1,7 @@
 import { Outlet } from "react-router";
-import "./App.css";
 
-import Navigation from "./Components/Navigation";
-import Footer from "./Pages/Footer";
+import Navigation from "./Pages/Components/Navigation";
+import Footer from "./Pages/Components/Footer";
 
 function App() {
   return (
