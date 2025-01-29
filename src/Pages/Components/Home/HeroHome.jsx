@@ -3,9 +3,18 @@ import { heroimage } from "../../../assets";
 const HeroHome = () => {
   return (
     <>
-      <div className="container-fluid min-vh-100  d-block d-md-flex align-items-center hero-section-background ">
-        {/* px-sm-5 px-2   */}
-        <div className=" container-xxl d-flex justify-content-center ">
+      <div
+        className="position-relative container-fluid min-vh-100  d-block d-md-flex align-items-center hero-section-background "
+        style={{
+          padding: "0px",
+        }}
+      >
+        <div
+          className=" container-xl d-flex justify-content-center hero-padding"
+          style={{
+            height: "100%",
+          }}
+        >
           <div className="row align-items-center">
             <div className="col-md-6">
               <h1 className="display-3 fw-bold">
@@ -31,13 +40,13 @@ const HeroHome = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 d-flex justify-content-end  ">
-              <img
-                src={heroimage}
-                alt="Job Search"
-                className="img-fluid"
-                // style={{ width: "80%" }}
-              />
+            <div
+              className="col-md-6 d-flex justify-content-end align-item"
+              // style={{
+              //   height: "100%",
+              // }}
+            >
+              <img src={heroimage} alt="Job Search" className="img-fluid" />
             </div>
           </div>
         </div>

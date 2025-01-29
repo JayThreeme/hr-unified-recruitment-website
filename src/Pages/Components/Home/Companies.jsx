@@ -24,10 +24,20 @@ const Companies = () => {
   ];
 
   return (
-    <div className="bg-danger text-white py-4">
-      <div className="container-fluid">
-        <h2 className="text-center mb-4">Our Sponsors</h2>
-        <div className=" scrolling-container">
+    <div
+      className="text-white"
+      style={{
+        padding: "64px 0px",
+        backgroundColor: "#C31D25",
+      }}
+    >
+      <div className="container-fluid d-grid gap-4">
+        <div className="">
+          <h2 className="text-center fw-bold">
+            Top Companies Hiring for Remote Jobs!
+          </h2>
+        </div>
+        <div className=" scrolling-container ">
           <div className="scrolling-content">
             {images.map((image, index) => (
               <div key={index} className="scrolling-item">

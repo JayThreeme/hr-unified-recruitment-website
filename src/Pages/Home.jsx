@@ -17,8 +17,8 @@ const Home = () => {
       <HowItWorks />
       <WhyChoose />
       <StatsBar />
-      <Testimonials />
       <FeaturedJobs />
+      <Testimonials />
       <CtaFeaturing />
     </>
   );

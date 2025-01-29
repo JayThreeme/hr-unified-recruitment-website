@@ -4,8 +4,13 @@ import { hrunifiedlogosvg } from "../../assets";
 const Navigation = () => {
   const location = useLocation();
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white">
-      <div className="container-xl">
+    <nav
+      className="navbar navbar-expand-lg navbar-light bg-white position-absolute top-0 start-0 container-fluid z-3"
+      style={{
+        padding: "0px",
+      }}
+    >
+      <div className="container-xl nav-custom-padding ">
         <Link className="navbar-brand" to="/">
           <img src={hrunifiedlogosvg} alt="logo" className="img-fluid" />
         </Link>
@@ -65,7 +70,7 @@ const Navigation = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/login">
+              <Link to="/jobs">
                 <button className="btn button-style1 ms-2 fw-medium">
                   Login
                 </button>

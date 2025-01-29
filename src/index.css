@@ -12,8 +12,16 @@ GrayDark: #868686
 GrayLight: #D3D3D3
 White: #FFFFFF
 Text: #343A40
-
 */
+
+h2 {
+  font-size: 40px;
+  line-height: auto;
+}
+p {
+  font-size: 16px;
+  color: #868686;
+}
 
 /* Button Style 1 */
 .button-style1 {
@@ -30,7 +38,19 @@ Text: #343A40
   border-radius: 10px;
 }
 
-/* Hero Section Background */
+/* Navigation  */
+.nav-custom-padding {
+  padding: 24px 0px;
+}
+
+@media (max-width: 767px) {
+  .nav-custom-padding {
+    padding: 20px;
+    background-color: #fff;
+  }
+}
+
+/* Hero Section  */
 .hero-section-background {
   background-image: url("/background/hero-section-bg.png");
   background-size: cover;
@@ -38,71 +58,37 @@ Text: #343A40
   height: 400px;
 }
 
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.hero-padding {
+  padding: 0px;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@media (max-width: 767px) {
+  .hero-padding {
+    padding-top: 88px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  a:hover {
-    color: #747bff;
+}
+
+/* Section setting defualt padding */
+.section-padding {
+  padding: 100px 0px;
+}
+
+@media (max-width: 767px) {
+  .section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+}
+
+/* alter bootstrap style */
+.card {
+  height: 100%;
+}
+
+.card-body {
+  flex-grow: 1;
+}
