@@ -5,7 +5,32 @@ body {
   color: #2c3137;
   background-color: #ffffff;
 }
+/* COLORS
+Red: #C31D25
+Black: #000000
+GrayDark: #868686
+GrayLight: #D3D3D3
+White: #FFFFFF
+Text: #343A40
 
+*/
+
+/* Button Style 1 */
+.button-style1 {
+  padding: 8px 24px;
+  background-color: #c31d25;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.button-style1:hover {
+  padding: 8px 24px;
+  background-color: rgb(161, 25, 32);
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+/* Hero Section Background */
 .hero-section-background {
   background-image: url("/background/hero-section-bg.png");
   background-size: cover;

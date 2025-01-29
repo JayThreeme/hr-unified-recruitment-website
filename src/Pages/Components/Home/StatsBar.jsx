@@ -6,8 +6,8 @@ const StatsBar = () => {
     { number: "5yrs", label: "In Business" },
   ];
   return (
-    <div className="bg-danger text-white py-4">
-      <div className="container">
+    <div className=" text-white py-4">
+      <div className="container bg-danger">
         <div className="row text-center">
           {stats.map((stat, index) => (
             <div key={index} className="col-md-3">

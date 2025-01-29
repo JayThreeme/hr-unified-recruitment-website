@@ -7,6 +7,7 @@ import HeroHome from "./Components/Home/HeroHome";
 import HowItWorks from "./Components/Home/HowItWorks";
 import StatsBar from "./Components/Home/StatsBar";
 import Testimonials from "./Components/Home/Testimonials";
+import WhyChoose from "./Components/Home/WhyChoose";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <HeroHome />
       <Companies />
       <HowItWorks />
+      <WhyChoose />
       <StatsBar />
       <Testimonials />
       <FeaturedJobs />
