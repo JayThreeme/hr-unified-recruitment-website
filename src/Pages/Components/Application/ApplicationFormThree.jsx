@@ -60,10 +60,11 @@ const ApplicationFormThree = () => {
 
             {/* forms */}
             <div className="d-grid gap-4">
-              
               <div className="input-group mb-3">
                 <ul className="list-unstyled d-grid gap-4">
-                  <li><h5>Personal Details</h5></li>
+                  <li>
+                    <h5>Personal Details</h5>
+                  </li>
                   <li>
                     <div className="d-flex align-items-center">
                       <input
@@ -176,29 +177,60 @@ const ApplicationFormThree = () => {
                     </div>
                   </li>
                   {/* education */}
-                  <li><h5>Education </h5></li>
+                  <li>
+                    <h5>Education </h5>
+                  </li>
                   <li>
                     <div className="d-flex column-gap-3">
-                      
-                      <div className="d-flex align-items-center">
-                        <input
-                          className="form-control"
-                          type="text"
-                          name="option"
-                          placeholder="Level of Education"
-                        />
-                        <input
-                          className="form-control"
-                          type="text"
-                          name="option"
-                          placeholder="Degree"
-                        />
-                        <input
-                          className="form-control"
-                          type="text"
-                          name="option"
-                          placeholder="Course"
-                        />
+                      <div className="d-grid gap-4">
+                        <div className="input-group mb-3">
+                          <ul className="list-unstyled d-grid gap-4">
+                            <li>
+                              <div className="d-flex column-gap-3">
+                                <div className="d-flex align-items-center">
+                                  <button
+                                    className="btn btn-outline-secondary dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    Level of Education
+                                  </button>
+                                  <ul className="dropdown-menu">
+                                    <li>
+                                      <a className="dropdown-item" href="#">
+                                        Elementary
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a className="dropdown-item" href="#">
+                                        High School
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a className="dropdown-item" href="#">
+                                        College
+                                      </a>
+                                    </li>
+                                  </ul>
+
+                                  <input
+                                    className="form-control"
+                                    type="text"
+                                    name="option"
+                                    placeholder="Degree"
+                                  />
+                                  <input
+                                    className="form-control"
+                                    type="text"
+                                    name="option"
+                                    placeholder="Course"
+                                  />
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </li>
@@ -210,116 +242,106 @@ const ApplicationFormThree = () => {
                       rows="3"
                     ></textarea>
                   </li>
+                  {/* Language */}
+                  <li>
+                    <h5>Language </h5>
+                  </li>
                   <li>
                     <div className="d-flex align-items-center">
                       <input
                         className="form-control"
                         type="text"
                         name="option"
-                        placeholder="Address"
+                        placeholder="Language"
                       />
                     </div>
                   </li>
                   <li>
+                    <div className="">
+                      <input
+                        className="form-control"
+                        type="text"
+                        name="option"
+                        placeholder="Second Language"
+                      />
+                    </div>
+                  </li>
+                  {/* address */}
+                  <li>
+                    <h5>Address </h5>
+                  </li>
+                  <li>
+                    <div className="d-flex align-items-center">
+                      <input
+                        className="form-control"
+                        type="text"
+                        name="option"
+                        placeholder="House Number / Street"
+                      />
+                      <input
+                        className="form-control"
+                        type="text"
+                        name="option"
+                        placeholder="Barangay"
+                      />
+                    </div>
+                  </li>
+                  
+                  <li>
                     <div className="d-flex column-gap-3">
-                      <div className="d-flex align-items-center">
-                        <button
-                          className="btn btn-outline-secondary dropdown-toggle"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          City
-                        </button>
-                        <ul className="dropdown-menu">
-                          <li>
-                            <a className="dropdown-item" href="#">
-                              Baguio
-                            </a>
-                          </li>
-                          <li>
-                            <a className="dropdown-item" href="#">
-                              Pangasinan
-                            </a>
-                          </li>
-                          <li>
-                            <a className="dropdown-item" href="#">
-                              Manila
-                            </a>
-                          </li>
-                          <li>
-                            <a className="dropdown-item" href="#">
-                              La Union
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="d-flex align-items-center">
-                        <button
-                          className="btn btn-outline-secondary dropdown-toggle"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          State
-                        </button>
-                        <ul className="dropdown-menu">
-                          <li>
-                            <a className="dropdown-item" href="#">
-                              State1
-                            </a>
-                          </li>
-                          <li>
-                            <a className="dropdown-item" href="#">
-                              State2
-                            </a>
-                          </li>
-                          <li>
-                            <a className="dropdown-item" href="#">
-                              State3
-                            </a>
-                          </li>
-                          <li>
-                            <a className="dropdown-item" href="#">
-                              State4
-                            </a>
-                          </li>
-                        </ul>
+                      <div className="d-grid gap-4">
+                        <div className="input-group mb-3">
+                          <ul className="list-unstyled d-grid gap-4">
+                            <li>
+                              <div className="d-flex column-gap-3">
+                                <div className="d-flex align-items-center">
+                                  <input
+                                    className="form-control"
+                                    type="text"
+                                    name="option"
+                                    placeholder="City"
+                                  />
+                                  <button
+                                    className="btn btn-outline-secondary dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    Country
+                                  </button>
+                                  <ul className="dropdown-menu">
+                                    <li>
+                                      <a className="dropdown-item" href="#">
+                                        Philippines
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a className="dropdown-item" href="#">
+                                        Japan
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a className="dropdown-item" href="#">
+                                        North Korea
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </li>
                   <li>
-                    <div className="d-flex align-items-center">
-                      <button
-                        className="btn btn-outline-secondary dropdown-toggle"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Country
-                      </button>
-                      <ul className="dropdown-menu">
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            Philippines
-                          </a>
-                        </li>
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            USA
-                          </a>
-                        </li>
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            Japan
-                          </a>
-                        </li>
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            Canada
-                          </a>
-                        </li>
-                      </ul>
+                    <div className="">
+                      <input
+                        className="form-control"
+                        type="text"
+                        name="option"
+                        placeholder="Zip Code"
+                      />
                     </div>
                   </li>
                 </ul>
@@ -328,7 +350,7 @@ const ApplicationFormThree = () => {
 
             {/* button */}
             <div className="text-center">
-              <Link to="/application/form3">
+              <Link to="/application/thanks">
                 <button
                   className="btn text-white button-style1"
                   style={{

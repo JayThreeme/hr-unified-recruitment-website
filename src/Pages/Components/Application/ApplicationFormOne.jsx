@@ -324,7 +324,7 @@ const ApplicationFormOne = () => {
             {/* Gender */}
             <div className="d-grid gap-4">
               <h6 className="fw-bold p-0 m-0">
-                2. Are you a software engineer or not?
+                Gender
               </h6>
               <div className="input-group mb-3">
                 <ul className="list-unstyled d-grid gap-4">
