@@ -24,42 +24,6 @@ const HeroJobs = () => {
                 Find the right job, the right way. Streamlined hiring for
                 employers, simplified applications for candidates.
               </p>
-              <div className="mt-4">
-                <div className="input-group">
-                  <span className="input-group-text">
-                    <i className="bi bi-search"></i>
-                  </span>
-                  <input
-                    type="text"
-                    className="form-control form-control-lg"
-                    placeholder="Job title "
-                    style={{
-                      fontSize: "16px",
-                      color: "#D3D3D3",
-                      padding: "16px 12px",
-                    }}
-                  />
-                  <span className="input-group-text">
-                    <i className="bi bi-pin"></i>
-                  </span>
-                  <input
-                    type="text"
-                    className="form-control form-control-lg"
-                    placeholder="Location"
-                    style={{
-                      fontSize: "16px",
-                      color: "#D3D3D3",
-                      padding: "16px 12px",
-                    }}
-                  />
-                  <button
-                    className="btn btn-danger btn-lg"
-                    style={{ fontSize: "16px" }}
-                  >
-                    Search Jobs
-                  </button>
-                </div>
-              </div>
             </div>
             <div
               className="col-md-6 d-flex justify-content-end align-item"
