@@ -34,12 +34,14 @@ const ApplicationFormThanks = () => {
             <hr />
 
             {/* thanks information */}
-            <div className="py-5">
-              <div className="d-grid gap-4 align-items-center">
+            <div className="row py-5 justify-content-center">
+              <div className="col-lg-8  ">
+                <div className="d-flex flex-wrap justify-content-center gap-2 "> 
                 <img src={hrunifiedlogosvg} alt="logo" className="img-fluid" style={{
-                  width: "40%",
+                  width: "50%",
                   objectFit: "cover",
                 }}/>
+                </div>
                 <h1 className="fw-semibold">Thank You</h1>
                 <h2 className="fw-semibold">for completing your application</h2>
                 <p className="" style={{color: "#C31D25"}}>You will recieve an email notification shortly.</p>
