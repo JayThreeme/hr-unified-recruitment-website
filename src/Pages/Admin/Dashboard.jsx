@@ -2,7 +2,8 @@ import { Link, Outlet } from "react-router";
 import Footer from "../Components/Footer";
 import AdminNavigation from "./Components/AdminNavigation";
 import "../../Css/Admin.css";
-import { hrunifiedlogosvg } from "../../assets";
+import { hrunifiedlogosvg,profile1 } from "../../assets";
+
 const Dashboard = () => {
   return (
     <>
@@ -35,7 +36,7 @@ const Dashboard = () => {
             </div>
             <div>
               <img
-                src="/api/placeholder/40/40"
+                src={profile1}
                 alt="Profile"
                 className="profile-image"
               />
@@ -43,7 +44,7 @@ const Dashboard = () => {
           </div>
 
           {/* Page Content */}
-          <div className="flex-grow-1 p-4">
+          <div className="flex-grow-1 p-4" style={{ backgroundColor: "#F0F0F0"}}>
             <Outlet />
           </div>
         </div>

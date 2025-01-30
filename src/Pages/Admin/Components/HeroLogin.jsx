@@ -18,7 +18,7 @@ const HeroLogin = () => {
           <div className="row align-items-center">
             <div className="container d-flex justify-content-center align-items-center">
               <div className="card p-4 shadow" style={{ width: "350px" }}>
-                <div className="text-center mb-4">
+                <div className="text-center mb-5">
                   <img
                     src={hrunifiedlogosvg}
                     alt="HR Unified Recruitment"
@@ -26,21 +26,25 @@ const HeroLogin = () => {
                     className="img-fluid"
                   />
                 </div>
-                <h6 className="mb-3">Login</h6>
+                <h6 className="mb-3 mt-3 text-center">Login</h6>
                 <form>
-                  <div className="mb-3">
+                  <div className="form-floating mb-3">
                     <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Username"
+                      type="email"
+                      class="form-control"
+              
+                      placeholder="name@example.com"
                     />
+                    <label for="floatingInput">Email address</label>
                   </div>
-                  <div className="mb-3">
+                  <div className="form-floating mb-3">
                     <input
                       type="password"
-                      className="form-control"
+                      class="form-control"
+  
                       placeholder="Password"
                     />
+                    <label for="floatingPassword">Password</label>
                   </div>
                   <Link to="/admin/dashboard">
                     <button className="btn btn-danger w-100 button-style1">

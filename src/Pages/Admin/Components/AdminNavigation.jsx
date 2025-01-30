@@ -1,48 +1,63 @@
+import { Link } from "react-router";
+
 const AdminNavigation = () => {
   return (
     <nav className="p-3">
-      <ul className="nav flex-column nav-pills gap-2">
+      <ul className="nav flex-column nav-pills gap-2 " >
         <li className="nav-item">
-          <a href="#" className="nav-link active d-flex align-items-center">
-            {/* <LayoutDashboard className="me-2" size={20} /> */}
+          <Link
+            className="fw-medium text-decoration-none" 
+            to="/admin/dashboard"
+            style={{
+              color: location.pathname === "/about" ? "#C31D25" : "inherit",
+            }}
+          >
             Dashboard
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a
-            href="#"
-            className="nav-link text-secondary d-flex align-items-center"
+        <Link
+            className="fw-medium text-decoration-none"
+            to="/admin/applicants"
+            style={{
+              color: location.pathname === "/about" ? "#C31D25" : "inherit",
+            }}
           >
-            {/* <Users className="me-2" size={20} /> */}
             Applicants
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a
-            href="#"
-            className="nav-link text-secondary d-flex align-items-center"
+        <Link
+            className="fw-medium text-decoration-none"
+            to="/admin/jobs"
+            style={{
+              color: location.pathname === "/about" ? "#C31D25" : "inherit",
+            }}
           >
-            {/* <Briefcase className="me-2" size={20} /> */}
             Jobs
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a
-            href="#"
-            className="nav-link text-secondary d-flex align-items-center"
+        <Link
+            className="fw-medium text-decoration-none"
+            to="/admin/calendar"
+            style={{
+              color: location.pathname === "/about" ? "#C31D25" : "inherit",
+            }}
           >
-            {/* <Calendar className="me-2" size={20} /> */}
             Calendar
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a
-            href="#"
-            className="nav-link text-secondary d-flex align-items-center"
+        <Link
+            className="fw-medium text-decoration-none"
+            to="/admin/StudioAccount"
+            style={{
+              color: location.pathname === "/about" ? "#C31D25" : "inherit",
+            }}
           >
-            {/* <UserCircle className="me-2" size={20} /> */}
             Studio Account
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

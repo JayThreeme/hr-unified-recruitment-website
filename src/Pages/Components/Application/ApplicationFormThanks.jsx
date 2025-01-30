@@ -35,16 +35,28 @@ const ApplicationFormThanks = () => {
 
             {/* thanks information */}
             <div className="row py-5 justify-content-center">
-              <div className="col-lg-8  ">
-                <div className="d-flex flex-wrap justify-content-center gap-2 "> 
-                <img src={hrunifiedlogosvg} alt="logo" className="img-fluid" style={{
-                  width: "50%",
-                  objectFit: "cover",
-                }}/>
+              <div className="col-lg-8 text-center d-grid gap-3">
+                <div className="d-flex flex-wrap justify-content-center gap-2 ">
+                  <img
+                    src={hrunifiedlogosvg}
+                    alt="logo"
+                    className="img-fluid"
+                    style={{
+                      width: "50%",
+                      objectFit: "cover",
+                    }}
+                  />
                 </div>
-                <h1 className="fw-semibold">Thank You</h1>
-                <h2 className="fw-semibold">for completing your application</h2>
-                <p className="" style={{color: "#C31D25"}}>You will recieve an email notification shortly.</p>
+                <div>
+                  <h1 className="fw-semibold ">Thank You</h1>
+                  <h2 className="fw-semibold ">
+                    for completing your application
+                  </h2>
+                </div>
+
+                <p className="" style={{ color: "#C31D25" }}>
+                  You will recieve an email notification shortly.
+                </p>
               </div>
             </div>
 

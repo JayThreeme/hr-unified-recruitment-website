@@ -24,6 +24,12 @@ import ApplicationFormThanks from "./Pages/Components/Application/ApplicationFor
 
 import Dashboard from "./Pages/Admin/Dashboard";
 import AdminDashboard from "./Pages/Admin/AdminDashboard";
+import AdminApplicant from "./Pages/Admin/AdminApplicants";
+import AdminJobs from "./Pages/Admin/AdminJobs";
+import AdminCalendar from "./Pages/Admin/AdminCalendar";
+import AdminStudioAccount from "./Pages/Admin/AdminStudioAccount";
+
+
 
 const root = document.getElementById("root");
 
@@ -43,8 +49,12 @@ ReactDOM.createRoot(root).render(
         <Route path="form3" element={<ApplicationFormThree />} />
         <Route path="thanks" element={<ApplicationFormThanks />} />
       </Route>
-      <Route path="/admin/dashboard" element={<Dashboard />}>
-        <Route index element={<AdminDashboard />} />
+      <Route path="/admin" element={<Dashboard />}>
+        <Route index path="dashboard" element={<AdminDashboard />} />
+        <Route path="applicants" element={<AdminApplicant />} />
+        <Route path="jobs" element={<AdminJobs />} />
+        <Route path="calendar" element={<AdminCalendar />} />
+        <Route path="studioaccount" element={<AdminStudioAccount />} />
       </Route>
     </Routes>
   </BrowserRouter>
