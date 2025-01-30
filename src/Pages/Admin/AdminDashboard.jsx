@@ -148,7 +148,10 @@ const AdminDashboard = () => {
                   <div className="card-body text-center fw-semibold p-0 m-0 ">
                     <h1>{status.value}</h1>
                   </div>
-                  <div className="card-footer text-body-secondary p-0 m-0 text-center " style={{ backgroundColor: "#fff"}}>
+                  <div
+                    className="card-footer text-body-secondary p-0 m-0 text-center "
+                    style={{ backgroundColor: "#fff" }}
+                  >
                     <p>{status.title}</p>
                   </div>
                 </div>
@@ -157,11 +160,7 @@ const AdminDashboard = () => {
           </div>
         </div>
 
-        {/* charts */}
-        <div className="card ">
-          {/* left */}
-          <div>
-            {/* <ReactECharts
+        {/* <ReactECharts
               echarts={echarts}
               option={this.getOption()}
               notMerge={true}
@@ -172,11 +171,51 @@ const AdminDashboard = () => {
               opts={pie}
             /> */}
 
-            <ReactECharts option={pie} style={{ height: 200 }} />
+        {/* charts */}
+        <div className="card ">
+          {/* left */}
+          <div className="row">
+            <div className="col-md-6">
+              <ReactECharts option={pie} style={{ height: 100 }} />
+            </div>
+            {/* right */}
+            <div className="col-md-6">
+              <ReactECharts option={bar} style={{ height: 500 }} />
+            </div>
           </div>
-          {/* right */}
-          <div>
-            <ReactECharts option={bar} style={{ height: 500 }} />
+          <div className="row">
+            <div className="col-md-6">
+              <div className="card-body">
+                <div className="d-flex justify-content-between align-items-center mb-3">
+                  <h5 className="card-title m-0">Title</h5>
+                  <div className="d-flex gap-2">
+                    <select
+                      className="form-select form-select-sm"
+                      style={{ width: "120px" }}
+                    >
+                      <option>Metric</option>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                    </select>
+                    <select
+                      className="form-select form-select-sm"
+                      style={{ width: "120px" }}
+                    >
+                      <option>Today</option>
+                      <option>Yesterday</option>
+                      <option>Last Week</option>
+                    </select>
+                  </div>
+                </div>
+                <div className="">
+                  <ReactECharts option={pie} style={{ height: 100 }} />
+                </div>
+              </div>
+            </div>
+            {/* right */}
+            <div className="col-md-6">
+              <ReactECharts option={bar} style={{ height: 500 }} />
+            </div>
           </div>
         </div>
       </div>

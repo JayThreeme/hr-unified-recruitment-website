@@ -1,5 +1,3 @@
-import React from "react";
-
 const AdminApplicants = () => {
   const applicants = [
     {
@@ -100,6 +98,48 @@ const AdminApplicants = () => {
       progress: "60",
       source: "JobStreet",
     },
+    {
+      name: "Jane Smith",
+      status: "Interview Scheduled",
+      course: "BSCpE",
+      progress: "80",
+      source: "Indeed",
+    },
+    {
+      name: "Michael Johnson",
+      status: "Screening",
+      course: "BSCS",
+      progress: "60",
+      source: "JobStreet",
+    },
+    {
+      name: "Jane Smith",
+      status: "Interview Scheduled",
+      course: "BSCpE",
+      progress: "80",
+      source: "Indeed",
+    },
+    {
+      name: "Michael Johnson",
+      status: "Screening",
+      course: "BSCS",
+      progress: "60",
+      source: "JobStreet",
+    },
+    {
+      name: "Emily Davis",
+      status: "Applied",
+      course: "BSIS",
+      progress: "100",
+      source: "Company Website",
+    },
+    {
+      name: "David Martinez",
+      status: "Hired",
+      course: "BSIT",
+      progress: "100",
+      source: "Referral",
+    },
   ];
 
   return (
@@ -138,7 +178,7 @@ const AdminApplicants = () => {
 
         {/* charts */}
         <div className="card p-4 m-0">
-          <table class="table table-striped table-hover ">
+          <table className="table table-striped table-hover ">
             <thead>
               <tr>
                 <th scope="col">#</th>
@@ -156,7 +196,7 @@ const AdminApplicants = () => {
       progress: "100",
       source: "Referral", */}
               {applicants.map((applicant, idx) => (
-                <tr>
+                <tr key={idx}>
                   <th scope="row">{idx + 1}</th>
                   <td>{applicant.name}</td>
                   <td>{applicant.status}</td>

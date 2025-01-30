@@ -39,7 +39,7 @@ const Dashboard = () => {
           </div>
 
           {/* Main Content */}
-          <div className="flex-grow-1 d-flex flex-column">
+          <div className="d-flex flex-column flex-grow-1">
             {/* Top Bar */}
             <div className="topbar px-4 py-3 d-flex justify-content-between align-items-center">
               <div className="d-flex align-items-center">
@@ -61,8 +61,9 @@ const Dashboard = () => {
             {/* Page Content */}
             <div
               className="flex-grow-1 p-4"
-              style={{ backgroundColor: "#F0F0F0" }}
+              style={{ backgroundColor: "#F0F0F0", minHeight: "0" }}
             >
+              {/* Make sure the content inside Outlet stretches */}
               <Outlet />
             </div>
           </div>
