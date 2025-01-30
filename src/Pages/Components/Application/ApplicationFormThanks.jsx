@@ -62,7 +62,7 @@ const ApplicationFormThanks = () => {
 
             {/* button */}
             <div className="text-center">
-              <Link to="/application/thanks">
+              <Link to="/">
                 <button
                   className="btn text-white button-style1"
                   style={{
