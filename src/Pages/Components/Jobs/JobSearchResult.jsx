@@ -90,6 +90,7 @@ const JobSearchResult = () => {
             )}
           </div>
         </div>
+        
       </div>
     </div>
   );

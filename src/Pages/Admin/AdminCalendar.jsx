@@ -2,11 +2,12 @@ import { useState } from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import eventsinfo from "../../Information/EventsInfo";
+import { eventsinfo } from "../../Information/EventsInfo";
+
 const localizer = momentLocalizer(moment);
 
 const AdminCalendar = () => {
-  const [events, setEvents] = useState([eventsinfo]);
+  const [events, setEvents] = useState(eventsinfo);
 
   return (
     <>

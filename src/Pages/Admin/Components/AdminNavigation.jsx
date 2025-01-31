@@ -163,7 +163,7 @@ const AdminNavigation = () => {
             <li className="mb-1">
               <Link
                 className="text-decoration-none d-flex align-items-center gap-2 text-danger"
-                to="/logout"
+                to="/"
               >
                 <i className="bi bi-box-arrow-right"></i> Logout
               </Link>

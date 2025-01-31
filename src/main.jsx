@@ -16,6 +16,8 @@ import Jobs from "./Pages/Jobs";
 import Contact from "./Pages/Contact";
 import Login from "./Pages/Admin/Login";
 
+import NotFound from "./Pages/NotFound";
+
 import Application from "./Pages/Application";
 import ApplicationFormOne from "./Pages/Components/Application/ApplicationFormOne";
 import ApplicationFormTwo from "./Pages/Components/Application/ApplicationFormTwo";
@@ -30,6 +32,7 @@ import AdminCalendar from "./Pages/Admin/AdminCalendar";
 import AdminStudioAccount from "./Pages/Admin/AdminStudioAccount";
 import AdminCreateJobs from "./Pages/Admin/AdminCreateJobs";
 import AdminDeleteJobs from "./Pages/Admin/AdminDeleteJobs";
+
 
 
 
@@ -60,6 +63,7 @@ ReactDOM.createRoot(root).render(
         <Route path="calendar" element={<AdminCalendar />} />
         <Route path="studioaccount" element={<AdminStudioAccount />} />
       </Route>
+      <Route path="*" element={<NotFound />} />
     </Routes>
   </BrowserRouter>
 );
