@@ -5,17 +5,18 @@ const JobSearchResult = () => {
   const [selectedJob, setSelectedJob] = useState(null);
 
   return (
+    
     <div
       className=""
       style={{
-        padding: "64px 0px",
+        padding: "10px 0px 0px 0px",
         backgroundColor: "#FFF",
       }}
     >
-      <div className="container d-grid gap-4">
+      <div className="container d-grid gap-4 border-top ">
         <div className="row">
           {/* list */}
-          <div className="col-md-4 border-end">
+          <div className="col-md-4 border-end pt-3 ps-0">
             <div className="d-flex justify-content-between align-items-center mb-3">
               <h5>1 to 40 for Software Engineer</h5>
               <div className="btn-group">
