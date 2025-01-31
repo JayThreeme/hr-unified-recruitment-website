@@ -5,23 +5,20 @@
 } */
 
 /* Navigation Styles */
-/* .nav-link {
-  border-radius: 4px;
-  transition: background-color 0.2s;
+.nav-link {
+  color: #2c3137;
 }
 
 .nav-link:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  color:#c31d25;
 }
 
-.nav-link.active {
-  background-color: #c31d25 !important;
-  color: white !important;
+.nav-link:active{
+  color:#c31d25;
 }
 
-.nav-link.active svg {
-  color: white;
-} */
+
+
 
 /* Sidebar style */
 .sidebar {

@@ -1,147 +1,6 @@
-const AdminApplicants = () => {
-  const applicants = [
-    {
-      name: "John Doe",
-      status: "Applied",
-      course: "BSIT",
-      progress: "100",
-      source: "LinkedIn",
-    },
-    {
-      name: "Jane Smith",
-      status: "Interview Scheduled",
-      course: "BSCpE",
-      progress: "80",
-      source: "Indeed",
-    },
-    {
-      name: "Michael Johnson",
-      status: "Screening",
-      course: "BSCS",
-      progress: "60",
-      source: "JobStreet",
-    },
-    {
-      name: "Emily Davis",
-      status: "Applied",
-      course: "BSIS",
-      progress: "100",
-      source: "Company Website",
-    },
-    {
-      name: "David Martinez",
-      status: "Hired",
-      course: "BSIT",
-      progress: "100",
-      source: "Referral",
-    },
-    {
-      name: "Sarah Brown",
-      status: "Rejected",
-      course: "BSCS",
-      progress: "30",
-      source: "LinkedIn",
-    },
-    {
-      name: "Robert Wilson",
-      status: "Offer Extended",
-      course: "BSCpE",
-      progress: "95",
-      source: "Indeed",
-    },
-    {
-      name: "Jessica Taylor",
-      status: "Interview Scheduled",
-      course: "BSIT",
-      progress: "80",
-      source: "Facebook Jobs",
-    },
-    {
-      name: "William Anderson",
-      status: "Screening",
-      course: "BSIS",
-      progress: "55",
-      source: "JobStreet",
-    },
-    {
-      name: "Olivia Thomas",
-      status: "Applied",
-      course: "BSCS",
-      progress: "100",
-      source: "Glassdoor",
-    },
-    {
-      name: "James White",
-      status: "Hired",
-      course: "BSIT",
-      progress: "100",
-      source: "Referral",
-    },
-    {
-      name: "John Doe",
-      status: "Applied",
-      course: "BSIT",
-      progress: "100",
-      source: "LinkedIn",
-    },
-    {
-      name: "Jane Smith",
-      status: "Interview Scheduled",
-      course: "BSCpE",
-      progress: "80",
-      source: "Indeed",
-    },
-    {
-      name: "Michael Johnson",
-      status: "Screening",
-      course: "BSCS",
-      progress: "60",
-      source: "JobStreet",
-    },
-    {
-      name: "Jane Smith",
-      status: "Interview Scheduled",
-      course: "BSCpE",
-      progress: "80",
-      source: "Indeed",
-    },
-    {
-      name: "Michael Johnson",
-      status: "Screening",
-      course: "BSCS",
-      progress: "60",
-      source: "JobStreet",
-    },
-    {
-      name: "Jane Smith",
-      status: "Interview Scheduled",
-      course: "BSCpE",
-      progress: "80",
-      source: "Indeed",
-    },
-    {
-      name: "Michael Johnson",
-      status: "Screening",
-      course: "BSCS",
-      progress: "60",
-      source: "JobStreet",
-    },
-    {
-      name: "Emily Davis",
-      status: "Applied",
-      course: "BSIS",
-      progress: "100",
-      source: "Company Website",
-    },
-    {
-      name: "David Martinez",
-      status: "Hired",
-      course: "BSIT",
-      progress: "100",
-      source: "Referral",
-    },
-  ];
+import { applicants } from "../../Information/Applicants";
 
+const AdminApplicants = () => {
   return (
     <>
       <div className="">
@@ -155,28 +14,28 @@ const AdminApplicants = () => {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Fulltime
+                New
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Remote
+                Interview
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Part-time
+                Screening
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Intern
+                Hired
               </a>
             </li>
           </ul>
         </div>
 
-        {/* charts */}
+        {/* table */}
         <div className="card p-4 m-0">
           <table className="table table-striped table-hover ">
             <thead>
@@ -187,14 +46,10 @@ const AdminApplicants = () => {
                 <th scope="col">Course</th>
                 <th scope="col">Progress</th>
                 <th scope="col">Source</th>
+                <th scope="col">Tools</th>
               </tr>
             </thead>
             <tbody>
-              {/* name: "James White",
-      status: "Hired",
-      course: "BSIT",
-      progress: "100",
-      source: "Referral", */}
               {applicants.map((applicant, idx) => (
                 <tr key={idx}>
                   <th scope="row">{idx + 1}</th>
@@ -203,6 +58,12 @@ const AdminApplicants = () => {
                   <td>{applicant.course}</td>
                   <td>{applicant.progress}</td>
                   <td>{applicant.source}</td>
+                  <td>
+                      <div>
+                        <a href="">View</a>
+                      </div>
+
+                  </td>
                 </tr>
               ))}
             </tbody>

@@ -70,7 +70,7 @@ const AdminNavigation = () => {
             <li className="mb-1">
               <Link
                 className="text-decoration-none d-flex align-items-center gap-2"
-                to="/admin/jobs/view"
+                to="/admin/jobs"
               >
                 <i className="bi bi-eye"></i> View Jobs
               </Link>

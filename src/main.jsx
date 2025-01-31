@@ -28,6 +28,8 @@ import AdminApplicant from "./Pages/Admin/AdminApplicants";
 import AdminJobs from "./Pages/Admin/AdminJobs";
 import AdminCalendar from "./Pages/Admin/AdminCalendar";
 import AdminStudioAccount from "./Pages/Admin/AdminStudioAccount";
+import AdminCreateJobs from "./Pages/Admin/AdminCreateJobs";
+import AdminDeleteJobs from "./Pages/Admin/AdminDeleteJobs";
 
 
 
@@ -53,6 +55,8 @@ ReactDOM.createRoot(root).render(
         <Route index path="dashboard" element={<AdminDashboard />} />
         <Route path="applicants" element={<AdminApplicant />} />
         <Route path="jobs" element={<AdminJobs />} />
+        <Route path="jobs/create" element={<AdminCreateJobs />} />
+        <Route path="jobs/delete" element={<AdminDeleteJobs />} />
         <Route path="calendar" element={<AdminCalendar />} />
         <Route path="studioaccount" element={<AdminStudioAccount />} />
       </Route>
