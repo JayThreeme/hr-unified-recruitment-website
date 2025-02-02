@@ -36,6 +36,10 @@ import profile5 from "./profile/profile5.png";
 //CTA ICON
 import CTAicon from "./CTAicon.png";
 
+//about
+import ourmission from "./images/ourmission.png";
+import whatweoffer from "./images/whatweoffer.png";
+
 export {
   amazon,
   apple,
@@ -61,4 +65,6 @@ export {
   profile4,
   profile5,
   CTAicon,
+  ourmission,
+  whatweoffer,
 };

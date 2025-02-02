@@ -1,4 +1,4 @@
-import { howitworks } from "../../../assets";
+import { whatweoffer } from "../../../assets";
 const WhatWeOffer = () => {
   return (
     <>
@@ -9,30 +9,32 @@ const WhatWeOffer = () => {
         // }}
       >
         <div className="row align-items-center ">
-          
-
           <div className="col-md-6 d-grid gap-4">
             <div className="d-grid gap-4">
               <h2 className="fw-bold p-0 m-0">What We Offer</h2>
               <ul className="d-grid gap-4">
                 <li>
                   <p>
-                  Unified Hiring Process: Bringing together full-time and freelance opportunities in one easy-to-navigate platform. 
+                    Unified Hiring Process: Bringing together full-time and
+                    freelance opportunities in one easy-to-navigate platform.
                   </p>
                 </li>
                 <li>
                   <p>
-                  Efficient Application System: Save time with an optimized process that ensures only qualified candidates move forward. 
+                    Efficient Application System: Save time with an optimized
+                    process that ensures only qualified candidates move forward.
                   </p>
                 </li>
                 <li>
                   <p>
-                  User-Friendly Experience: Our intuitive design makes applying and hiring stress-free for everyone involved. 
+                    User-Friendly Experience: Our intuitive design makes
+                    applying and hiring stress-free for everyone involved.
                   </p>
                 </li>
                 <li>
                   <p>
-                  Informative Support: We prioritize transparency and clarity at every stage, so you’re always informed.
+                    Informative Support: We prioritize transparency and clarity
+                    at every stage, so you’re always informed.
                   </p>
                 </li>
               </ul>
@@ -40,9 +42,8 @@ const WhatWeOffer = () => {
           </div>
 
           <div className="col-md-6">
-            <img src={howitworks} alt="howitworks" className="img-fluid" />
+            <img src={whatweoffer} alt="howitworks" className="img-fluid" />
           </div>
-
         </div>
       </div>
     </>

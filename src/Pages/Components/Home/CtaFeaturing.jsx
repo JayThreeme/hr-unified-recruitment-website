@@ -62,9 +62,9 @@ const CtaFeaturing = () => {
                       value={searchTerm}
                       onChange={(e) => setSearchTerm(e.target.value)}
                     />
-                    <Link to="/jobs">
+                    <Link to="/application">
                       <button
-                        className="btn btn-danger btn-lg d-flex align-items-center text-decoration-none"
+                        className="btn btn-danger btn-lg  text-decoration-none button-style1"
                         type="submit"
                       >
                         <i className="bi bi-search me-2"></i>
@@ -99,7 +99,6 @@ const CtaFeaturing = () => {
                 <button
                   className="btn text-white button-style1"
                   style={{
-                    backgroundColor: "#C31D25",
                     padding: "8px 100px",
                   }}
                 >
