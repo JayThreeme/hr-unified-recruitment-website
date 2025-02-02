@@ -14,7 +14,7 @@ const ApplicationFormThree = () => {
             aria-valuemax="100"
             style={{ height: "2px" }}
           >
-            <div className="progress-bar" style={{ width: "75%" }}></div>
+            <div className="progress-bar" style={{ width: "100%" }}></div>
           </div>
 
           <button
@@ -34,7 +34,7 @@ const ApplicationFormThree = () => {
           </button>
           <button
             type="button"
-            className="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill"
+            className="position-absolute top-0 start-100 translate-middle btn btn-sm btn-primary rounded-pill"
             style={{ width: "2rem", height: "2rem" }}
           >
             3

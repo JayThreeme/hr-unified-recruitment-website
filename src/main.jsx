@@ -1,7 +1,8 @@
 // import { StrictMode } from 'react'
 // import { createRoot } from 'react-dom/client'
+import { useEffect } from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -33,13 +34,21 @@ import AdminStudioAccount from "./Pages/Admin/AdminStudioAccount";
 import AdminCreateJobs from "./Pages/Admin/AdminCreateJobs";
 import AdminDeleteJobs from "./Pages/Admin/AdminDeleteJobs";
 
-
-
-
 const root = document.getElementById("root");
+
+const ScrollToTop = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top whenever the location changes
+  }, [location]);
+
+  return null; // This component does not render anything
+};
 
 ReactDOM.createRoot(root).render(
   <BrowserRouter>
+    <ScrollToTop />
     <Routes>
       <Route path="/" element={<App />}>
         <Route index element={<Home />} />

@@ -123,7 +123,7 @@ const FeaturedJobs = () => {
                     </div>
 
                     <div className="d-flex justify-content-end w-100">
-                      <Link to="/application/form1">
+                      <Link to="/jobs">
                         <button
                           className="btn fw-medium"
                           style={{

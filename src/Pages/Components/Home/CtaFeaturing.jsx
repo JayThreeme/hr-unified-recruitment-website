@@ -62,7 +62,7 @@ const CtaFeaturing = () => {
                       value={searchTerm}
                       onChange={(e) => setSearchTerm(e.target.value)}
                     />
-                    <Link to="/application">
+                    <Link to="/jobs">
                       <button
                         className="btn btn-danger btn-lg  text-decoration-none button-style1"
                         type="submit"

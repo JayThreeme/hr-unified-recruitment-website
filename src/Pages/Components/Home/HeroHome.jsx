@@ -1,6 +1,16 @@
+import { useNavigate } from "react-router";
 import { heroimage } from "../../../assets";
 
 const HeroHome = () => {
+  const navigate = useNavigate();
+
+  const searchjobnavigate = () => {
+    setTimeout(() => {
+      navigate("/jobs");
+      window.scrollTo(0, 0);
+    }, 500);
+  };
+
   return (
     <>
       <div
@@ -52,9 +62,11 @@ const HeroHome = () => {
                       padding: "16px 12px",
                     }}
                   />
+
                   <button
                     className="btn btn-danger btn-lg button-style1"
                     style={{ fontSize: "16px" }}
+                    onClick={searchjobnavigate}
                   >
                     Search Jobs
                   </button>
