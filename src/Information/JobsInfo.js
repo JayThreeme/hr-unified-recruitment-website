@@ -105,4 +105,211 @@ export const jobs = [
     about:
       "As a Marketing Manager, you will be responsible for developing and implementing comprehensive marketing strategies to promote products and services to the target audience. Your role will involve conducting market research to understand customer needs, behaviors, and preferences, as well as analyzing competitor marketing strategies. You will use this data to create effective marketing campaigns that resonate with the target audience and drive brand awareness, customer engagement, and sales. You will need to have a deep understanding of both traditional and digital marketing channels, including social media, email marketing, SEO, paid advertising, and content marketing. You will collaborate closely with the sales team to ensure that marketing campaigns align with the overall business goals and generate quality leads. In addition, you will manage budgets for marketing campaigns and track the return on investment (ROI) for various marketing activities. You will also be responsible for developing content strategies, overseeing content creation, and ensuring that all content is aligned with the brand’s voice and messaging. As part of your role, you will analyze marketing data and metrics to gauge the effectiveness of campaigns and adjust strategies accordingly to optimize performance. You will work with graphic designers, copywriters, and other creative professionals to produce high-quality marketing materials that drive engagement. Strong project management skills are essential in this role, as you will need to handle multiple marketing campaigns simultaneously, ensuring they are delivered on time and within budget. Your role will also involve managing external agencies and vendors, ensuring that they meet deadlines and deliverables. You will need to stay up-to-date with the latest marketing trends and technologies, continuously seeking new and innovative ways to promote the company’s products. Collaboration with product managers and business executives will be key to ensuring that marketing efforts align with product launches and corporate objectives. The role requires strong leadership skills, as you will be managing a team of marketing professionals and guiding them in the execution of campaigns. You will also need to have excellent communication and presentation skills, as you will be presenting marketing strategies and campaign results to senior management. Your work will help shape the company’s public image, drive customer acquisition, and contribute to its overall success.",
   },
+  {
+    id: 11,
+    title: "Software Engineer",
+    location: "San Francisco, USA",
+    type: "Full-time",
+    workMode: "Remote",
+    description: "Design, develop, and maintain software applications.",
+    about:
+      "As a Software Engineer, you will be responsible for designing, developing, and maintaining software applications. You will collaborate with cross-functional teams to implement new features, optimize performance, and troubleshoot technical issues. The ideal candidate will have experience with full-stack development and knowledge of various programming languages like JavaScript, Python, and Ruby. You will work closely with product managers and designers to ensure the technical requirements of the application align with user needs.",
+  },
+  {
+    id: 12,
+    title: "Graphic Designer",
+    location: "Los Angeles, USA",
+    type: "Part-time",
+    workMode: "Hybrid",
+    description:
+      "Create visual content for marketing materials and digital platforms.",
+    about:
+      "As a Graphic Designer, your role will be to create visual content for marketing materials, websites, social media, and more. You will collaborate with the marketing team to produce high-quality design work that aligns with brand guidelines and resonates with target audiences. The ideal candidate will have strong skills in Adobe Creative Suite and a keen eye for detail. This part-time position offers flexibility, with some remote work opportunities.",
+  },
+  {
+    id: 13,
+    title: "Product Manager",
+    location: "Austin, USA",
+    type: "Contract",
+    workMode: "Hybrid",
+    description: "Lead product development from concept to launch.",
+    about:
+      "As a Product Manager, you will oversee the entire product development lifecycle, from ideation and concept to launch. You will work closely with design, engineering, and marketing teams to deliver successful products that meet customer needs. Strong project management and communication skills are essential, as you will coordinate between various stakeholders and ensure product milestones are met. This contract position will last for six months, with the potential for extension.",
+  },
+  {
+    id: 14,
+    title: "Sales Representative",
+    location: "Chicago, USA",
+    type: "Full-time",
+    workMode: "Remote",
+    description: "Drive sales and build relationships with potential clients.",
+    about:
+      "As a Sales Representative, your primary responsibility will be to drive sales and build relationships with new and existing clients. You will identify potential leads, conduct product demos, and negotiate contracts. This remote role requires excellent communication and persuasion skills, as well as the ability to work independently and meet sales targets. A proven track record in sales is preferred.",
+  },
+  {
+    id: 15,
+    title: "HR Coordinator",
+    location: "Miami, USA",
+    type: "Intern",
+    workMode: "Hybrid",
+    description: "Assist with recruitment, onboarding, and HR-related tasks.",
+    about:
+      "As an HR Coordinator intern, you will assist the HR team in various tasks, including recruitment, onboarding, employee engagement, and data entry. This internship provides an excellent opportunity to gain hands-on experience in human resources while supporting a growing organization. You will learn about HR processes and contribute to improving the employee experience.",
+  },
+  {
+    id: 16,
+    title: "Marketing Analyst",
+    location: "Seattle, USA",
+    type: "Part-time",
+    workMode: "Remote",
+    description:
+      "Analyze marketing data and create reports for performance tracking.",
+    about:
+      "As a Marketing Analyst, you will focus on analyzing marketing data and creating insightful reports that track the performance of campaigns. You will work closely with the marketing team to evaluate the effectiveness of digital marketing strategies, identify trends, and make data-driven recommendations. This part-time, remote position offers flexibility and requires proficiency in Excel, Google Analytics, and other marketing tools.",
+  },
+  {
+    id: 17,
+    title: "UI/UX Designer",
+    location: "San Diego, USA",
+    type: "Full-time",
+    workMode: "Hybrid",
+    description:
+      "Design intuitive user interfaces and ensure excellent user experiences.",
+    about:
+      "As a UI/UX Designer, you will focus on designing user-friendly interfaces and ensuring a seamless user experience for our products. You will collaborate with product managers and developers to understand user needs and create wireframes, prototypes, and high-fidelity designs. The ideal candidate will have strong experience with design tools such as Sketch, Figma, and Adobe XD. This full-time position offers a hybrid work model.",
+  },
+  {
+    id: 18,
+    title: "Data Scientist",
+    location: "New York, USA",
+    type: "Full-time",
+    workMode: "Remote",
+    description: "Analyze large datasets and develop predictive models.",
+    about:
+      "As a Data Scientist, you will work with large datasets to develop predictive models, perform data mining, and generate actionable insights. You will collaborate with business teams to understand data needs and create solutions that improve decision-making. Strong knowledge of machine learning algorithms, Python, and statistical analysis is required. This remote, full-time role offers the opportunity to work on cutting-edge data science projects.",
+  },
+  {
+    id: 19,
+    title: "Customer Support Specialist",
+    location: "Boston, USA",
+    type: "Part-time",
+    workMode: "Remote",
+    description:
+      "Provide support to customers and resolve issues via multiple channels.",
+    about:
+      "As a Customer Support Specialist, you will assist customers by responding to inquiries, troubleshooting issues, and providing solutions through phone, email, and chat. You will ensure that customers receive prompt and efficient service, contributing to the overall customer experience. This remote, part-time position requires excellent communication skills and the ability to remain calm under pressure.",
+  },
+  {
+    id: 20,
+    title: "Financial Analyst",
+    location: "Dallas, USA",
+    type: "Contract",
+    workMode: "Hybrid",
+    description: "Analyze financial data and prepare reports for management.",
+    about:
+      "As a Financial Analyst, you will be responsible for analyzing financial data, preparing reports, and providing insights to senior management. You will work with various departments to ensure that financial plans align with company objectives and contribute to the overall business strategy. Strong knowledge of accounting principles, Excel, and financial modeling is required for this six-month contract position.",
+  },
+  {
+    id: 21,
+    title: "Web Developer",
+    location: "Denver, USA",
+    type: "Full-time",
+    workMode: "Remote",
+    description: "Build and maintain websites and web applications.",
+    about:
+      "As a Web Developer, you will be responsible for building, testing, and maintaining websites and web applications. You will work with front-end and back-end technologies to deliver high-quality web experiences. The ideal candidate will have strong experience with HTML, CSS, JavaScript, and frameworks like React and Node.js. You will also collaborate with designers and other developers to ensure optimal performance and user experience.",
+  },
+  {
+    id: 22,
+    title: "Content Strategist",
+    location: "Atlanta, USA",
+    type: "Part-time",
+    workMode: "Hybrid",
+    description: "Develop content strategies and oversee content creation.",
+    about:
+      "As a Content Strategist, your role will be to develop and execute content strategies for digital marketing campaigns, websites, and social media. You will collaborate with writers, designers, and marketing teams to ensure all content aligns with brand messaging and engages the target audience. The ideal candidate will have experience in content marketing, SEO, and editorial management. This part-time, hybrid position offers flexibility.",
+  },
+  {
+    id: 23,
+    title: "Software Tester",
+    location: "Phoenix, USA",
+    type: "Intern",
+    workMode: "Hybrid",
+    description:
+      "Test and validate software applications for quality assurance.",
+    about:
+      "As a Software Tester intern, you will be involved in the testing and validation of software applications. Your role will include creating test plans, executing tests, and reporting bugs. You will work closely with developers and quality assurance teams to ensure the software meets high standards. This internship offers valuable hands-on experience in software testing and quality assurance.",
+  },
+  {
+    id: 24,
+    title: "Business Analyst",
+    location: "Washington, USA",
+    type: "Contract",
+    workMode: "Hybrid",
+    description: "Analyze business processes and propose improvements.",
+    about:
+      "As a Business Analyst, you will evaluate and improve business processes by gathering data, performing analyses, and developing actionable recommendations. You will collaborate with various departments to implement improvements and support business goals. Strong analytical skills and experience with process modeling are required. This contract position will last for six months, with potential for extension.",
+  },
+  {
+    id: 25,
+    title: "Event Coordinator",
+    location: "Boston, USA",
+    type: "Full-time",
+    workMode: "Hybrid",
+    description: "Plan and execute events for corporate clients.",
+    about:
+      "As an Event Coordinator, you will be responsible for planning and executing corporate events, including conferences, workshops, and team-building activities. You will work with clients to understand their needs, manage logistics, and coordinate vendors. The ideal candidate will have excellent organizational skills and experience in event planning. This full-time, hybrid position offers the opportunity to work on exciting and varied projects.",
+  },
+  {
+    id: 26,
+    title: "Data Engineer",
+    location: "Los Angeles, USA",
+    type: "Full-time",
+    workMode: "Remote",
+    description:
+      "Design and implement systems to collect, store, and process data.",
+    about:
+      "As a Data Engineer, you will be responsible for designing and implementing systems that collect, store, and process large amounts of data. You will work closely with data scientists and analysts to build infrastructure for data processing, ensuring scalability and efficiency. The ideal candidate will have experience with cloud platforms, databases, and data pipelines. This is a full-time remote position offering flexibility.",
+  },
+  {
+    id: 27,
+    title: "SEO Specialist",
+    location: "New York, USA",
+    type: "Part-time",
+    workMode: "Remote",
+    description: "Optimize websites for search engines to increase traffic.",
+    about:
+      "As an SEO Specialist, you will optimize websites to improve search engine rankings and drive organic traffic. You will conduct keyword research, on-page SEO, link building, and content optimization. The ideal candidate will have experience with SEO tools like Google Analytics, SEMrush, and Ahrefs. This part-time, remote position allows you to work on a variety of projects.",
+  },
+  {
+    id: 28,
+    title: "Digital Marketing Manager",
+    location: "Dallas, USA",
+    type: "Full-time",
+    workMode: "Hybrid",
+    description: "Lead digital marketing campaigns across multiple channels.",
+    about:
+      "As a Digital Marketing Manager, you will oversee and execute digital marketing campaigns across various channels, including social media, search engines, and email marketing. You will analyze performance metrics, optimize campaigns, and develop strategies to increase brand visibility and customer engagement. The ideal candidate will have experience in digital marketing and proficiency in tools like Google Ads, Facebook Ads, and Google Analytics.",
+  },
+  {
+    id: 29,
+    title: "Product Designer",
+    location: "Chicago, USA",
+    type: "Contract",
+    workMode: "Hybrid",
+    description: "Design user-centered products and features.",
+    about:
+      "As a Product Designer, you will be responsible for creating user-centered designs for new features and products. You will conduct user research, develop wireframes and prototypes, and collaborate with engineering and product teams to bring your designs to life. Experience with design tools such as Sketch, Figma, and InVision is required. This is a contract position for six months with the possibility of extension.",
+  },
+  {
+    id: 30,
+    title: "Copywriter",
+    location: "Austin, USA",
+    type: "Part-time",
+    workMode: "Remote",
+    description:
+      "Write clear and compelling copy for various marketing materials.",
+    about:
+      "As a Copywriter, you will craft clear and engaging copy for marketing materials, websites, blogs, and social media. You will collaborate with the marketing and design teams to ensure that all copy aligns with brand guidelines and resonates with the target audience. The ideal candidate will have strong writing skills and experience in content creation. This part-time, remote position offers flexibility.",
+  },
 ];

@@ -12,9 +12,8 @@ const AdminCalendar = () => {
   return (
     <>
       <div className="">
-        <div className="d-flex gap-3 justify-content-start align-items-center">
+        <div className="d-flex gap-3 justify-content-start align-items-center mb-3 py-2">
           <h5 className="m-0">Calendar</h5>
-          
         </div>
 
         {/* table */}
@@ -25,7 +24,7 @@ const AdminCalendar = () => {
               events={events}
               startAccessor="start"
               endAccessor="end"
-              style={{width: "100%", height: "600px"}}
+              style={{ width: "100%", height: "600px" }}
             />
           </div>
         </div>

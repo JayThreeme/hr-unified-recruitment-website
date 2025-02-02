@@ -5,11 +5,11 @@ const AdminDashboard = () => {
   return (
     <>
       <div className="">
-        <div className="d-flex gap-3 justify-content-start align-items-center mb-2">
+        <div className="d-flex gap-5 justify-content-start align-items-center mb-3 py-2">
           <h5 className="m-0">Dashboard</h5>
-          <ul className="nav">
+          {/* <ul className="nav">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#" >
+              <a className="nav-link" aria-current="page" href="#">
                 All
               </a>
             </li>
@@ -33,23 +33,34 @@ const AdminDashboard = () => {
                 Intern
               </a>
             </li>
-          </ul>
+          </ul> */}
         </div>
 
         {/* status bars */}
-        <div className="card p-3 mb-2">
-          <div className="row d-flex justify-content-around gap-2">
+        <div className="mb-3">
+          <div className="d-flex justify-content-between gap-2">
             {status.map((status, idx) => (
-              <div key={idx} className="col mx-0 px-0 " >
+              <div
+                key={idx}
+                className="flex-fill"
+                style={{ minWidth: "150px" }}
+              >
                 <div
-                  className="card"
+                  className="card pb-0"
                   style={{ backgroundColor: status.color, width: "100%" }}
                 >
-                  <div className="card-body text-center fw-semibold p-0 m-0 ">
-                    <h1>{status.value}</h1>
+                  <div className="card-body text-center fw-semibold p-3">
+                    <h1
+                      className=" fw-bold"
+                      style={{
+                        color: "#333",
+                      }}
+                    >
+                      {status.value}
+                    </h1>
                   </div>
                   <div
-                    className="card-footer text-body-secondary p-0 m-0 text-center "
+                    className="card-footer text-body-secondary text-center py-2"
                     style={{ backgroundColor: "#fff" }}
                   >
                     <p>{status.title}</p>
@@ -72,7 +83,7 @@ const AdminDashboard = () => {
             /> */}
 
         {/* charts */}
-        <div className="card p-2 mb-2">
+        <div className="card p-2 mb-3">
           {/* left */}
           <div className="row">
             <div className="col-md-6">

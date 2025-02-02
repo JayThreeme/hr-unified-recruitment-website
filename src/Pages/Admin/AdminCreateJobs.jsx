@@ -1,66 +1,56 @@
-import { Link } from "react-router";
+import { useState } from "react";
+import { useNavigate } from "react-router";
 
 const AdminCreateJobs = () => {
-  const cities = ["Baguio", "Pangasinan", "Manila", "La Union"];
-  const states = ["State1", "State2", "State3", "State4"];
-  const countries = ["Philippines", "USA", "Japan", "Canada"];
+  const [modalVisible, setModalVisible] = useState(false);
+  const navigate = useNavigate();
 
-  const renderDropdown = (options, label) => (
-    <div className="d-flex align-items-center">
-      <button
-        className="btn btn-outline-secondary dropdown-toggle"
-        type="button"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        {label}
-      </button>
-      <ul className="dropdown-menu">
-        {options.map((option, index) => (
-          <li key={index}>
-            <a className="dropdown-item" href="#">
-              {option}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+  const handleSubmit = () => {
+    setModalVisible(true);
+  };
+
+  const handleCloseModal = () => {
+    setModalVisible(false);
+    navigate("/admin/jobs");
+  };
 
   return (
     <>
-      <div className="">
-        <div className="d-flex gap-3 justify-content-start align-items-center">
+      <div>
+        <div className="d-flex gap-3 justify-content-start align-items-center mb-3 py-2">
           <h5 className="m-0">Create Jobs</h5>
         </div>
 
         {/* form */}
         <div className="card p-4 m-0">
-          <div className="">
+          <div>
             <h3>Job Creation</h3>
             <p>Please provide all the required information</p>
             <hr />
             <div className="row">
-              <div className="col ">
+              {/* First Column */}
+              <div className="col-md-6">
                 <div className="d-grid gap-3">
                   <h6 className="fw-semibold mt-3 mb-0">Title</h6>
                   <div className="d-flex column-gap-0 input-group">
                     <input
                       className="form-control"
                       type="text"
-                      name="first-name"
+                      name="title"
                       placeholder="Enter title"
                     />
                   </div>
+
                   <h6 className="fw-semibold mt-3 mb-0">Salary</h6>
                   <div className="d-flex column-gap-0 input-group">
                     <input
                       className="form-control"
                       type="text"
-                      name="first-name"
-                      placeholder="Enter Job Type"
+                      name="salary"
+                      placeholder="Enter Salary"
                     />
                   </div>
+
                   <h6 className="fw-semibold mt-3 mb-0">Description</h6>
                   <div className="d-flex column-gap-0 input-group">
                     <textarea
@@ -69,6 +59,7 @@ const AdminCreateJobs = () => {
                       style={{ height: "100px" }}
                     ></textarea>
                   </div>
+
                   <h6 className="fw-semibold mt-3 mb-0">Requirements</h6>
                   <div className="d-flex column-gap-0 input-group">
                     <textarea
@@ -79,155 +70,153 @@ const AdminCreateJobs = () => {
                   </div>
                 </div>
               </div>
-              <div className="col">
+
+              {/* Second Column */}
+              <div className="col-md-6">
                 <div className="d-grid gap-3">
-                  <div className="d-flex column-gap-3 input-group">
-                    {/* Department */}
-                    <div className="d-flex w-100" >
-                      <h6 className="fw-semibold mt-3 me-4">Department</h6>
-                      <div className="d-flex align-items-center " style={{width: "100px"}}>
-                        <button
-                          className="btn btn-outline-secondary dropdown-toggle"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          Department
-                        </button>
-                        <ul className="dropdown-menu">
-                          <li>
-                            <a className="dropdown-item" href="#">
-                              Information Technology
-                            </a>
-                          </li>
-                          <li>
-                            <a className="dropdown-item" href="#">
-                              Customer Service
-                            </a>
-                          </li>
-                          <li>
-                            <a className="dropdown-item" href="#">
-                              Finance & Marketing
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    {/* Job Type */}
-                    <div className="d-flex w-100">
-                      <h6 className="fw-semibold mt-3 me-4">Job type</h6>
-                      <div className="d-flex align-items-center ">
-                        <button
-                          className="btn btn-outline-secondary dropdown-toggle"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          Job Type
-                        </button>
-                        <ul className="dropdown-menu">
-                          <li>
-                            <a className="dropdown-item" href="#">
-                              Full-time
-                            </a>
-                          </li>
-                          <li>
-                            <a className="dropdown-item" href="#">
-                              Remote
-                            </a>
-                          </li>
-                          <li>
-                            <a className="dropdown-item" href="#">
-                              Part-time
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    {/* Language*/}
-                    <div className="d-flex w-100">
-                      <h6 className="fw-semibold mt-3 me-4">Language</h6>
-                      <div className="d-flex align-items-center">
-                        <button
-                          className="btn btn-outline-secondary dropdown-toggle"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          Language
-                        </button>
-                        <ul className="dropdown-menu">
-                          <li>
-                            <a className="dropdown-item" href="#">
-                              English
-                            </a>
-                          </li>
-                          <li>
-                            <a className="dropdown-item" href="#">
-                              Filipino
-                            </a>
-                          </li>
-                          <li>
-                            <a className="dropdown-item" href="#">
-                              Tag-lish
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+                  <h6 className="fw-semibold mt-3 mb-0">Department</h6>
+                  <div className="d-flex gap-3">
+                    <button
+                      className="btn btn-outline-secondary dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Department
+                    </button>
+                    <ul className="dropdown-menu">
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Information Technology
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Customer Service
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Finance & Marketing
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <h6 className="fw-semibold mt-3 mb-0">Job Type</h6>
+                  <div className="d-flex gap-3">
+                    <button
+                      className="btn btn-outline-secondary dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Job Type
+                    </button>
+                    <ul className="dropdown-menu">
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Full-time
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Remote
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Part-time
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <h6 className="fw-semibold mt-3 mb-0">Language</h6>
+                  <div className="d-flex gap-3">
+                    <button
+                      className="btn btn-outline-secondary dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Language
+                    </button>
+                    <ul className="dropdown-menu">
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          English
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Filipino
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#">
+                          Tag-lish
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-
-                
               </div>
+            </div>
+
+            <div className="d-grid gap-3 mt-4 text-center justify-content-start">
+              <button
+                type="submit"
+                className="btn button-style1 w-auto"
+                onClick={handleSubmit}
+              >
+                Submit Job
+              </button>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Modal Notification */}
+      {modalVisible && (
+        <div
+          className="modal fade show"
+          tabIndex="-1"
+          style={{ display: "block" }}
+          aria-labelledby="modalLabel"
+          aria-hidden="false"
+        >
+          <div className="modal-dialog">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="modalLabel">
+                  Job Created
+                </h5>
+                <button
+                  type="button"
+                  className="btn-close"
+                  onClick={handleCloseModal}
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div className="modal-body">
+                <p>Your job listing has been created successfully!</p>
+              </div>
+              <div className="modal-footer">
+                <button
+                  type="button"
+                  className="btn btn-secondary"
+                  onClick={handleCloseModal}
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };
 
 export default AdminCreateJobs;
-
-{
-  /* <div className="text-center">
-<Link to="/application/form2">
-  <button
-    className="btn text-white button-style1"
-    style={{ backgroundColor: "#C31D25", padding: "8px 100px" }}
-  >
-    Submit
-  </button>
-</Link>
-</div> */
-}
-
-{
-  /* <div className="input-group ">
-                <div className="form-check form-check-inline">
-                  <input
-                    className="form-check-input"
-                    type="radio"
-                    name="gender"
-                    id="male"
-                    value="male"
-                  />
-                  <label className="form-check-label" htmlFor="male">
-                    Male
-                  </label>
-                </div>
-                <div className="form-check form-check-inline">
-                  <input
-                    className="form-check-input"
-                    type="radio"
-                    name="gender"
-                    id="female"
-                    value="female"
-                  />
-                  <label className="form-check-label" htmlFor="female">
-                    Female
-                  </label>
-                </div>
-              </div> */
-}

@@ -33,6 +33,8 @@ import AdminCalendar from "./Pages/Admin/AdminCalendar";
 import AdminStudioAccount from "./Pages/Admin/AdminStudioAccount";
 import AdminCreateJobs from "./Pages/Admin/AdminCreateJobs";
 import AdminDeleteJobs from "./Pages/Admin/AdminDeleteJobs";
+import AdminReportAnalytics from "./Pages/Admin/AdminReportAnalytics";
+import AdminReviewFeedback from "./Pages/Admin/AdminReviewFeedback";
 
 const root = document.getElementById("root");
 
@@ -71,6 +73,8 @@ ReactDOM.createRoot(root).render(
         <Route path="jobs/delete" element={<AdminDeleteJobs />} />
         <Route path="calendar" element={<AdminCalendar />} />
         <Route path="studioaccount" element={<AdminStudioAccount />} />
+        <Route path="reportanalytics" element={<AdminReportAnalytics />} />
+        <Route path="reviewfeedback" element={<AdminReviewFeedback />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>

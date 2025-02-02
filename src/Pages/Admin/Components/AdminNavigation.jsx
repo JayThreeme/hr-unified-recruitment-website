@@ -19,7 +19,7 @@ const AdminNavigation = () => {
         </li>
         <li className="nav-item mb-3">
           <Link
-            className="fw-medium text-decoration-none d-flex align-items-center gap-2"
+            className="fw-medium text-decoration-none d-flex align-items-center gap-2 "
             to="/admin/dashboard"
             style={{
               color:
@@ -33,7 +33,7 @@ const AdminNavigation = () => {
         </li>
         <li className="nav-item mb-3">
           <Link
-            className="fw-medium text-decoration-none d-flex align-items-center gap-2"
+            className="fw-medium text-decoration-none d-flex align-items-center gap-2 "
             to="/admin/applicants"
             style={{
               color:
@@ -71,6 +71,7 @@ const AdminNavigation = () => {
               <Link
                 className="text-decoration-none d-flex align-items-center gap-2"
                 to="/admin/jobs"
+                style={{ color: "inherit" }}
               >
                 <i className="bi bi-eye"></i> View Jobs
               </Link>
@@ -79,6 +80,7 @@ const AdminNavigation = () => {
               <Link
                 className="text-decoration-none d-flex align-items-center gap-2"
                 to="/admin/jobs/create"
+                style={{ color: "inherit" }}
               >
                 <i className="bi bi-plus-square"></i> Create Job
               </Link>
@@ -87,6 +89,7 @@ const AdminNavigation = () => {
               <Link
                 className="text-decoration-none d-flex align-items-center gap-2"
                 to="/admin/jobs/delete"
+                style={{ color: "inherit" }}
               >
                 <i className="bi bi-trash"></i> Delete Jobs
               </Link>
@@ -109,6 +112,20 @@ const AdminNavigation = () => {
         <li className="nav-item mb-3">
           <Link
             className="fw-medium text-decoration-none d-flex align-items-center gap-2"
+            to="/admin/reportanalytics"
+            style={{
+              color:
+                location.pathname === "/admin/reportanalytics"
+                  ? "#C31D25"
+                  : "inherit",
+            }}
+          >
+            <i className="bi bi-book"></i> Report & Analytics
+          </Link>
+        </li>
+        <li className="nav-item mb-3">
+          <Link
+            className="fw-medium text-decoration-none d-flex align-items-center gap-2"
             to="/admin/StudioAccount"
             style={{
               color:
@@ -120,11 +137,25 @@ const AdminNavigation = () => {
             <i className="bi bi-building"></i> Studio Account
           </Link>
         </li>
+        <li className="nav-item mb-3">
+          <Link
+            className="fw-medium text-decoration-none d-flex align-items-center gap-2"
+            to="/admin/reviewfeedback"
+            style={{
+              color:
+                location.pathname === "/admin/reviewfeedback"
+                  ? "#C31D25"
+                  : "inherit",
+            }}
+          >
+            <i className="bi bi-file-earmark-diff"></i> Review & Feedback
+          </Link>
+        </li>
         <li>
           <hr />
         </li>
         {/* account */}
-        <li className="nav-item mt-1">
+        <li className="nav-item mt-2 mb-3">
           <button
             className="fw-medium text-decoration-none bg-transparent border-0 w-100 text-start d-flex align-items-center gap-2 px-0"
             onClick={() => setIsAccountOpen(!isAccountOpen)}
@@ -148,6 +179,7 @@ const AdminNavigation = () => {
               <Link
                 className="text-decoration-none d-flex align-items-center gap-2"
                 to="/admin/account/edit"
+                style={{ color: "inherit" }}
               >
                 <i className="bi bi-pencil"></i> Edit Profile
               </Link>
@@ -156,19 +188,36 @@ const AdminNavigation = () => {
               <Link
                 className="text-decoration-none d-flex align-items-center gap-2"
                 to="/admin/account/password"
+                style={{ color: "inherit" }}
               >
                 <i className="bi bi-key"></i> Change Password
               </Link>
             </li>
-            <li className="mb-1">
-              <Link
-                className="text-decoration-none d-flex align-items-center gap-2 text-danger"
-                to="/"
-              >
-                <i className="bi bi-box-arrow-right"></i> Logout
-              </Link>
-            </li>
           </ul>
+        </li>
+        <li className="nav-item mb-3">
+          <Link
+            className="fw-medium text-decoration-none d-flex align-items-center gap-2"
+            to="/admin/settings"
+            style={{
+              color:
+                location.pathname === "/admin/settings" ? "#C31D25" : "inherit",
+            }}
+          >
+            <i className="bi bi-gear-fill"></i> Setting
+          </Link>
+        </li>
+        <li>
+          <hr />
+        </li>
+        <li className="mb-3">
+          <Link
+            className="text-decoration-none d-flex align-items-center gap-2 text-danger"
+            to="/"
+            style={{ color: "#C31D25" }}
+          >
+            <i className="bi bi-box-arrow-right"></i> Logout
+          </Link>
         </li>
       </ul>
     </nav>

@@ -10,15 +10,12 @@
 }
 
 .nav-link:hover {
-  color:#c31d25;
+  color: #c31d25;
 }
 
-.nav-link:active{
-  color:#c31d25;
+.nav-link:active {
+  color: #c31d25;
 }
-
-
-
 
 /* Sidebar style */
 .sidebar {
