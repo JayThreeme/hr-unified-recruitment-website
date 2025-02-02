@@ -31,6 +31,13 @@ const AdminReportAnalytics = () => {
             </div>
           </div>
         </div>
+
+        <div className="card p-2 mb-3">
+          <div className="d-flex gap-3 justify-content-start align-items-center">
+            <button className="btn btn-primary">Download Report</button>
+            <button className="btn btn-secondary">Print Report</button>
+          </div>
+        </div>
       </div>
     </>
   );

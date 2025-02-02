@@ -1,6 +1,14 @@
-import { Link } from "react-router";
+import { useNavigate } from "react-router";
 
 const ApplicationFormThree = () => {
+  const navigate = useNavigate();
+
+  const handleProceed = () => {
+    setTimeout(() => {
+      navigate("/application/thanks");
+      window.scrollTo(0, 0);
+    }, 500);
+  };
   return (
     <div className="container my-5">
       <div className="d-grid gap-3">
@@ -17,29 +25,23 @@ const ApplicationFormThree = () => {
             <div className="progress-bar" style={{ width: "100%" }}></div>
           </div>
 
-          <button
-            type="button"
-            className="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill"
-            style={{ width: "2rem", height: "2rem" }}
-          >
-            1
-          </button>
-
-          <button
-            type="button"
-            className="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill"
-            style={{ width: "2rem", height: "2rem" }}
-          >
-            2
-          </button>
-          <button
-            type="button"
-            className="position-absolute top-0 start-100 translate-middle btn btn-sm btn-primary rounded-pill"
-            style={{ width: "2rem", height: "2rem" }}
-          >
-            3
-          </button>
+          {["1", "2", "3"].map((step, index) => (
+            <button
+              key={step}
+              type="button"
+              className={`position-absolute top-0 translate-middle btn btn-sm btn-primary rounded-pill`}
+              style={{
+                width: "2rem",
+                height: "2rem",
+                left: `${index * 50}%`,
+                transform: "translateX(-50%)",
+              }}
+            >
+              {step}
+            </button>
+          ))}
         </div>
+
         <div className="d-flex justify-content-between w-100 mt-4">
           <p>Basic Info</p>
           <p className="ms-5">Assessment Test</p>
@@ -53,6 +55,7 @@ const ApplicationFormThree = () => {
 
           {/* Form Content */}
           <div className="d-grid gap-4">
+            {/* Personal Details */}
             <div className="mb-4">
               <h5>Personal Details</h5>
               <div className="d-flex gap-3">
@@ -154,6 +157,7 @@ const ApplicationFormThree = () => {
               </div>
             </div>
 
+            {/* Education */}
             <div className="mb-4">
               <h5>Education</h5>
               <div className="d-flex gap-3">
@@ -197,6 +201,7 @@ const ApplicationFormThree = () => {
               </div>
             </div>
 
+            {/* Skills */}
             <div className="mb-4">
               <h5>Skills</h5>
               <textarea
@@ -206,6 +211,7 @@ const ApplicationFormThree = () => {
               ></textarea>
             </div>
 
+            {/* Language */}
             <div className="mb-4">
               <h5>Language</h5>
               <div className="d-flex gap-3">
@@ -222,6 +228,7 @@ const ApplicationFormThree = () => {
               </div>
             </div>
 
+            {/* Address */}
             <div className="mb-4">
               <h5>Address</h5>
               <div className="d-flex gap-3">
@@ -279,14 +286,59 @@ const ApplicationFormThree = () => {
 
             {/* Submit Button */}
             <div className="text-center">
-              <Link to="/application/thanks">
-                <button
-                  className="btn text-white button-style1"
-                  style={{ backgroundColor: "#C31D25", padding: "8px 100px" }}
-                >
-                  Submit
-                </button>
-              </Link>
+              <button
+                className="btn text-white button-style1"
+                style={{ backgroundColor: "#C31D25", padding: "8px 100px" }}
+                data-bs-toggle="modal"
+                data-bs-target="#termsModal"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* modal */}
+      <div
+        className="modal fade"
+        id="termsModal"
+        tabIndex="-1"
+        aria-labelledby="termsModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-scrollable">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">
+                Leave Feedback
+              </h5>
+            </div>
+            <div className="modal-body">
+              <textarea
+                className="form-control"
+                rows="4"
+                placeholder="Please provide your feedback here..."
+                value="Enter feedback here"
+              />
+            </div>
+            <div className="modal-footer">
+              <button
+                type="button"
+                className="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+
+              <button
+                type="button"
+                className="btn button-style1"
+                data-bs-dismiss="modal"
+                onClick={handleProceed}
+              >
+                Accept and Proceed
+              </button>
             </div>
           </div>
         </div>

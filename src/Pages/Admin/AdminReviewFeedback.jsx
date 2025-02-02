@@ -75,47 +75,57 @@ const AdminReviewFeedback = () => {
 
       {/* Feedback Modal */}
       {show && (
-        <div
-          className="modal show"
-          style={{ display: "block", color: "#343A40" }}
-          role="dialog"
-        >
-          <div className="modal-dialog">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h1 className="modal-title fs-5">Feedback Details</h1>
-              </div>
-              <div className="modal-body">
-                {selectedFeedback && (
-                  <div>
-                    <p style={{ color: "#343A40" }}>
-                      <strong>User:</strong> {selectedFeedback.user}
-                    </p>
-                    <p style={{ color: "#343A40" }}>
-                      <strong>Feedback:</strong> {selectedFeedback.feedback}
-                    </p>
-                    <p style={{ color: "#343A40" }}>
-                      <strong>Rating:</strong> {selectedFeedback.rating}
-                    </p>
-                    <p style={{ color: "#343A40" }}>
-                      <strong>Date:</strong> {selectedFeedback.date}
-                    </p>
-                  </div>
-                )}
-              </div>
-              <div className="modal-footer">
-                <button
-                  type="button"
-                  className="btn btn-secondary"
-                  onClick={handleClose}
-                >
-                  Close
-                </button>
+        <>
+          <div className="modal-backdrop fade show" />
+          <div
+            className="modal fade show"
+            style={{ display: "block", color: "#343A40" }}
+            role="dialog"
+          >
+            <div className="modal-dialog">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h1 className="modal-title fs-5">Feedback Details</h1>
+                </div>
+                <div className="modal-body">
+                  {selectedFeedback && (
+                    <div>
+                      <p style={{ color: "#343A40" }}>
+                        <strong>User:</strong> {selectedFeedback.user}
+                      </p>
+                      <p style={{ color: "#343A40" }}>
+                        <strong>Feedback:</strong> {selectedFeedback.feedback}
+                      </p>
+                      <p style={{ color: "#343A40" }}>
+                        <strong>Rating:</strong> {selectedFeedback.rating}
+                      </p>
+                      <p style={{ color: "#343A40" }}>
+                        <strong>Date:</strong> {selectedFeedback.date}
+                      </p>
+                    </div>
+                  )}
+                </div>
+                <div className="modal-footer">
+                  <button
+                    type="button"
+                    className="btn btn-secondary"
+                    onClick={handleClose}
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </>
       )}
+
+      <div className="card p-2 mb-3">
+        <div className="d-flex gap-3 justify-content-start align-items-center">
+          <button className="btn btn-primary">Download Report</button>
+          <button className="btn btn-secondary">Print Report</button>
+        </div>
+      </div>
     </div>
   );
 };

@@ -120,48 +120,51 @@ const AdminJobs = () => {
 
       {/* Modal */}
       {selectedJob && (
-        <div
-          className="modal show"
-          style={{ display: "block", color: "#343A40" }}
-          role="dialog"
-        >
-          <div className="modal-dialog">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h1 className="modal-title fs-5" id="exampleModalToggleLabel">
-                  {selectedJob.title}
-                </h1>
-              </div>
-              <div className="modal-body">
-                <p style={{ color: "#343A40" }}>
-                  <strong>Name:</strong> {selectedJob.title}
-                </p>
-                <p style={{ color: "#343A40" }}>
-                  <strong>Date Applied:</strong>{" "}
-                  {new Date().toLocaleDateString()}
-                </p>
-                <p style={{ color: "#343A40" }}>
-                  <strong>Location:</strong> {selectedJob.location}
-                </p>
-                <p style={{ color: "#343A40" }}>
-                  <strong>Type:</strong> {selectedJob.type}
-                </p>
-                <p style={{ color: "#343A40" }}>
-                  <strong>Description:</strong> {selectedJob.description}
-                </p>
-              </div>
-              <div className="modal-footer">
-                <button
-                  type="button"
-                  className="btn btn-secondary"
-                  onClick={handleCloseModal}
-                >
-                  Close
-                </button>
+        <>
+          <div className="modal-backdrop fade show" />
+          <div
+            className="modal fade show"
+            style={{ display: "block", color: "#343A40" }}
+            role="dialog"
+          >
+            <div className="modal-dialog">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h1 className="modal-title fs-5" id="exampleModalToggleLabel">
+                    {selectedJob.title}
+                  </h1>
+                </div>
+                <div className="modal-body">
+                  <p style={{ color: "#343A40" }}>
+                    <strong>Name:</strong> {selectedJob.title}
+                  </p>
+                  <p style={{ color: "#343A40" }}>
+                    <strong>Date Applied:</strong>{" "}
+                    {new Date().toLocaleDateString()}
+                  </p>
+                  <p style={{ color: "#343A40" }}>
+                    <strong>Location:</strong> {selectedJob.location}
+                  </p>
+                  <p style={{ color: "#343A40" }}>
+                    <strong>Type:</strong> {selectedJob.type}
+                  </p>
+                  <p style={{ color: "#343A40" }}>
+                    <strong>Description:</strong> {selectedJob.description}
+                  </p>
+                </div>
+                <div className="modal-footer">
+                  <button
+                    type="button"
+                    className="btn btn-secondary"
+                    onClick={handleCloseModal}
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </>
       )}
     </>
   );
