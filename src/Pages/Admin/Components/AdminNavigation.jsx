@@ -13,7 +13,7 @@ const AdminNavigation = () => {
       </div>
 
       {/* Navigation List */}
-      <ul className="nav flex-column nav-pills ps-2">
+      <ul className="nav flex-column nav-pills ">
         <li>
           <hr />
         </li>

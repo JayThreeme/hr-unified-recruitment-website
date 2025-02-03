@@ -26,7 +26,7 @@ const AdminStudioAccount = () => {
                     key={applicants.id}
                     className={`card mb-1 cursor-pointer ${
                       selectedAppli?.id === applicants.id
-                        ? "border-primary"
+                        ? "border-secondary"
                         : ""
                     }`}
                     onClick={() => setSelectedAppli(applicants)}

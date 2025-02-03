@@ -71,16 +71,7 @@ const AdminDashboard = () => {
           </div>
         </div>
 
-        {/* <ReactECharts
-              echarts={echarts}
-              option={this.getOption()}
-              notMerge={true}
-              lazyUpdate={true}
-              theme={"theme_name"}
-              onChartReady={this.onChartReadyCallback}
-              onEvents={EventsDict}
-              opts={pie}
-            /> */}
+
 
         {/* charts */}
         <div className="card p-2 mb-3">
@@ -103,40 +94,8 @@ const AdminDashboard = () => {
               <ReactECharts option={bartwo} style={{ width: "100%" }} />
             </div>
           </div>
-          {/* <div className="row">
-            <div className="col-md-6">
-              <div className="card-body">
-                <div className="d-flex justify-content-between align-items-center mb-3">
-                  <h5 className="card-title m-0">Title</h5>
-                  <div className="d-flex gap-2">
-                    <select
-                      className="form-select form-select-sm"
-                      style={{ width: "120px" }}
-                    >
-                      <option>Metric</option>
-                      <option>Option 1</option>
-                      <option>Option 2</option>
-                    </select>
-                    <select
-                      className="form-select form-select-sm"
-                      style={{ width: "120px" }}
-                    >
-                      <option>Today</option>
-                      <option>Yesterday</option>
-                      <option>Last Week</option>
-                    </select>
-                  </div>
-                </div>
-                <div className="">
-                  <ReactECharts option={pie} style={{ height: 100 }} />
-                </div>
-              </div>
-            </div>
-   
-            <div className="col-md-6">
-              <ReactECharts option={line} style={{ height: 500 }} />
-            </div>
-          </div> */}
+
+
         </div>
       </div>
     </>

@@ -13,7 +13,7 @@ const Dashboard = () => {
   return (
     <>
       <div className="d-flex flex-column vh-100">
-        <div className="d-flex flex-grow-1">
+        <div className="d-flex flex-grow-1 ">
           {/* Sidebar */}
           <div
             className={`sidebar bg-light border-end ${
@@ -43,7 +43,7 @@ const Dashboard = () => {
             {/* Top Bar */}
             <div className="topbar px-4 py-3 d-flex justify-content-between align-items-center">
               <div className="d-flex align-items-center">
-                {/* Hamburger Button (visible on mobile) */}
+
                 <button
                   className="d-md-none btn btn-light me-2"
                   onClick={toggleSidebar}
@@ -60,10 +60,10 @@ const Dashboard = () => {
 
             {/* Page Content */}
             <div
-              className="flex-grow-1 p-4"
+              className="flex-grow-1 p-4 "
               style={{ backgroundColor: "#F0F0F0", minHeight: "0" }}
             >
-              {/* Make sure the content inside Outlet stretches */}
+     
               <Outlet />
             </div>
           </div>
