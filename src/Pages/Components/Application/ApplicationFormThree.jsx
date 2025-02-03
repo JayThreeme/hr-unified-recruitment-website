@@ -315,12 +315,22 @@ const ApplicationFormThree = () => {
               </h5>
             </div>
             <div className="modal-body">
+            <h6 className="mb-3"style={{color: "#868686"}}>Please leave us a feedback for us to know how to improve our service</h6>
               <textarea
-                className="form-control"
-                rows="4"
+                className="form-control mb-3"
+                rows="8"
                 placeholder="Please provide your feedback here..."
-                value="Enter feedback here"
+        
+                style={{color: "#868686"}}
               />
+              <div className="d-flex gap-1">
+              <h6 style={{color: "#343A40"}}>Rate</h6>
+              <i className="bi bi-star-fill" style={{color: "#FDB037"}}></i>
+              <i className="bi bi-star-fill" style={{color: "#FDB037"}}></i>
+              <i className="bi bi-star-fill" style={{color: "#FDB037"}}></i>
+              <i className="bi bi-star-fill" style={{color: "#FDB037"}}></i>
+              <i className="bi bi-star-fill" style={{color: "#FDB037"}}></i>
+              </div>
             </div>
             <div className="modal-footer">
               <button

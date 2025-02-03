@@ -15,7 +15,7 @@ const OurMission = () => {
 
           <div className="col-md-6 d-grid gap-4">
             <div className="d-grid gap-4">
-              <h2 className="fw-bold p-0 m-0">Our Mission</h2>
+              <h2 className="fw-semibold p-0 m-0">Our Mission</h2>
               <p>
                 To simplify and streamline the recruitment journey by connecting
                 qualified candidates with the right opportunities while ensuring

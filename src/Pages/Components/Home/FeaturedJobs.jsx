@@ -141,7 +141,7 @@ const FeaturedJobs = () => {
           ))}
         </div>
         <div className="text-center">
-          <Link to="/login">
+          <Link to="/jobs">
             <button
               className="btn text-white"
               style={{

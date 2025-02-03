@@ -11,7 +11,7 @@ const WhatWeOffer = () => {
         <div className="row align-items-center ">
           <div className="col-md-6 d-grid gap-4">
             <div className="d-grid gap-4">
-              <h2 className="fw-bold p-0 m-0">What We Offer</h2>
+              <h2 className="fw-semibold p-0 m-0">What We Offer</h2>
               <ul className="d-grid gap-4">
                 <li>
                   <p>

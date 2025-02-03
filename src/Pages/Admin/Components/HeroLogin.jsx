@@ -26,7 +26,7 @@ const HeroLogin = () => {
                     className="img-fluid"
                   />
                 </div>
-                <h6 className="mb-3 mt-3 text-center">Login</h6>
+                <h6 className="mb-3 mt-3  fw-regular">Login</h6>
                 <form>
                   <div className="form-floating mb-3">
                     <input
@@ -35,7 +35,7 @@ const HeroLogin = () => {
               
                       placeholder="name@example.com"
                     />
-                    <label for="floatingInput">Email address</label>
+                    <label for="floatingInput" style={{color: "#868686"}}>Email address</label>
                   </div>
                   <div className="form-floating mb-3">
                     <input
@@ -44,13 +44,17 @@ const HeroLogin = () => {
   
                       placeholder="Password"
                     />
-                    <label for="floatingPassword">Password</label>
+                    <label for="floatingPassword" style={{color: "#868686"}}>Password</label>
+                  </div>
+                  <div className="form-floating mb-3">
+                    <a href="#" className="d-flex justify-content-end"> Forgot Password</a>
                   </div>
                   <Link to="/admin/dashboard">
                     <button className="btn btn-danger w-100 button-style1">
                       Login
                     </button>
                   </Link>
+        
                 </form>
               </div>
             </div>

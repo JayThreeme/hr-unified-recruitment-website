@@ -10,6 +10,7 @@ const JobFilters = () => {
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                style={{color: "#343A40"}}
               >
                 Job Type
               </button>
@@ -40,6 +41,7 @@ const JobFilters = () => {
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                style={{color: "#343A40"}}
               >
                 Industry
               </button>
@@ -70,6 +72,7 @@ const JobFilters = () => {
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                style={{color: "#343A40"}}
               >
                 Salary Range
               </button>
@@ -100,6 +103,7 @@ const JobFilters = () => {
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                style={{color: "#343A40"}}
               >
                 Experience Level
               </button>
@@ -135,6 +139,7 @@ const JobFilters = () => {
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                style={{color: "#343A40"}}
               >
                 Location
               </button>

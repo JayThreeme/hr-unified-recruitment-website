@@ -64,16 +64,16 @@ const JobSearchResult = () => {
                   style={{ cursor: "pointer" }}
                 >
                   <div className="card-body">
-                    <h5 className="card-title">{job.title}</h5>
+                    <h5 className="card-title fw-semibold">{job.title}</h5>
                     <div className="d-flex gap-2 mb-2">
-                      <span className="badge bg-secondary">{job.workMode}</span>
-                      <span className="badge bg-secondary">{job.type}</span>
+                      <span className="badge " style={{backgroundColor: "#C31D25"}}>{job.workMode}</span>
+                      <span className="badge " style={{backgroundColor: "#C31D25"}}>{job.type}</span>
                     </div>
-                    <div className="d-flex align-items-center mb-2">
+                    <div className="d-flex align-items-center mb-4">
                       <i className="bi bi-geo-alt me-2"></i>
                       <span className="text-muted">{job.location}</span>
                     </div>
-                    <p className="card-text text-muted">{job.description}</p>
+                    <p className="card-text text-muted" style={{color: "#343A40"}}>{job.description}</p>
                   </div>
                 </div>
               ))}
@@ -85,6 +85,7 @@ const JobSearchResult = () => {
                 className="btn btn-outline-secondary btn-sm"
                 onClick={handlePreviousPage}
                 disabled={currentPage === 1}
+                style={{color: "#343A40"}}
               >
                 Previous
               </button>
@@ -92,6 +93,7 @@ const JobSearchResult = () => {
                 className="btn btn-outline-secondary btn-sm"
                 onClick={handleNextPage}
                 disabled={currentPage === Math.ceil(jobs.length / jobsPerPage)}
+                style={{color: "#343A40"}}
               >
                 Next
               </button>
@@ -104,12 +106,12 @@ const JobSearchResult = () => {
               <div className="p-4">
                 <div className="d-flex justify-content-between align-items-start">
                   <div>
-                    <h3>{selectedJob.title}</h3>
+                    <h3 className="fw-semibold">{selectedJob.title}</h3>
                     <div className="d-flex gap-2 mb-3">
-                      <span className="badge bg-secondary">
+                      <span className="badge" style={{backgroundColor: "#C31D25"}}>
                         {selectedJob.workMode}
                       </span>
-                      <span className="badge bg-secondary">
+                      <span className="badge" style={{backgroundColor: "#C31D25"}}>
                         {selectedJob.type}
                       </span>
                     </div>
